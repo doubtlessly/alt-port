@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-portfolio-analytics"
+version = "1.0.0"
+description = "High-performance crypto portfolio analytics for AI-driven investment decisions"
+authors = [{name = "Portfolio Analytics", email = "analytics@portfolio.ai"}]
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["crypto", "portfolio", "analytics", "AI", "trading"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+
+dependencies = [
+    "aiohttp>=3.9.0",
+    "pandas>=2.1.0",
+    "numpy>=1.24.0", 
+    "TA-Lib>=0.4.0",
+    "asyncio-throttle>=1.0.0",
+    "tenacity>=8.0.0",
+    "pydantic>=2.0.0",
+    "rich>=13.0.0",
+    "httpx>=0.25.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/alt-port"
+Repository = "https://github.com/yourusername/alt-port"
+Documentation = "https://yourusername.github.io/alt-port"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true

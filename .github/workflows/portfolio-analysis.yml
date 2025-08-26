@@ -1,0 +1,333 @@
+name: Crypto Portfolio Analysis
+
+on:
+  schedule:
+    # Run every 4 hours during market hours (UTC)
+    - cron: '0 */4 * * *'
+  workflow_dispatch: # Allow manual trigger
+  push:
+    branches: [ main ]
+    paths:
+      - 'config/portfolio.json'
+      - 'src/**'
+      - '.github/workflows/portfolio-analysis.yml'
+
+jobs:
+  analyze-portfolio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25  # Stay under 30min GitHub limit
+    
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1  # Shallow clone for speed
+    
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    
+    - name: Install system dependencies for TA-Lib
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential
+        wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
+        tar -xzf ta-lib-0.4.0-src.tar.gz
+        cd ta-lib/
+        ./configure --prefix=/usr
+        make
+        sudo make install
+        sudo ldconfig
+    
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip wheel
+        pip install -r requirements.txt
+    
+    - name: Validate configuration
+      run: |
+        python -c "
+        from src.core.config import Config
+        Config.setup_directories()
+        portfolio = Config.load_portfolio()
+        print(f'✅ Portfolio loaded: {len(portfolio)} holdings')
+        checks = Config.validate_environment()
+        print(f'✅ Environment validation: {checks}')
+        assert len(portfolio) > 0, 'Portfolio must have holdings'
+        "
+    
+    - name: Run portfolio analysis
+      id: analysis
+      run: |
+        echo "::group::Portfolio Analysis"
+        python src/main.py
+        echo "::endgroup::"
+        
+        # Set outputs for later steps
+        if [ -f "docs/portfolio_summary.json" ]; then
+          echo "analysis_success=true" >> $GITHUB_OUTPUT
+          echo "timestamp=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_OUTPUT
+        else
+          echo "analysis_success=false" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Validate output files
+      if: steps.analysis.outputs.analysis_success == 'true'
+      run: |
+        echo "::group::Output Validation"
+        
+        # Check required files exist
+        required_files=(
+          "docs/portfolio_analysis.json"
+          "docs/portfolio_summary.json"
+        )
+        
+        for file in "${required_files[@]}"; do
+          if [ ! -f "$file" ]; then
+            echo "❌ Missing required file: $file"
+            exit 1
+          else
+            echo "✅ Found: $file ($(stat -c%s "$file") bytes)"
+          fi
+        done
+        
+        # Validate JSON structure
+        python -c "
+        import json
+        
+        # Validate summary
+        with open('docs/portfolio_summary.json') as f:
+          summary = json.load(f)
+          assert 'generated_at' in summary, 'Missing generated_at'
+          assert 'summary' in summary, 'Missing summary'
+          print('✅ Portfolio summary structure valid')
+        
+        # Validate full analysis  
+        with open('docs/portfolio_analysis.json') as f:
+          analysis = json.load(f)
+          assert 'metadata' in analysis, 'Missing metadata'
+          assert 'portfolio_data' in analysis, 'Missing portfolio_data'
+          assert 'ai_insights' in analysis, 'Missing ai_insights'
+          print('✅ Portfolio analysis structure valid')
+        
+        print('✅ All output files validated')
+        "
+        
+        echo "::endgroup::"
+    
+    - name: Generate performance report
+      if: steps.analysis.outputs.analysis_success == 'true'
+      run: |
+        echo "::group::Performance Report"
+        
+        python -c "
+        import json
+        from datetime import datetime
+        
+        # Load analysis results
+        with open('docs/portfolio_analysis.json') as f:
+          data = json.load(f)
+        
+        metadata = data['metadata']
+        ai_insights = data['ai_insights']
+        
+        print('📊 PORTFOLIO ANALYSIS REPORT')
+        print('=' * 50)
+        print(f'Generated: {metadata[\"generated_at\"]}')
+        print(f'Analysis Duration: {metadata[\"analysis_duration\"]:.2f}s')
+        print(f'Holdings Analyzed: {metadata[\"successful_analyses\"]}/{metadata[\"total_holdings\"]}')
+        print()
+        
+        # Portfolio health
+        health = ai_insights['portfolio_health']
+        print(f'Portfolio Health Score: {health[\"overall_score\"]:.2f}/1.0')
+        print(f'Risk Score: {health[\"risk_score\"]:.2f}/1.0')
+        print(f'Diversification: {health[\"diversification_score\"]:.2f}/1.0')
+        print()
+        
+        # Market overview
+        market = ai_insights['market_overview']
+        print(f'Market Regime: {market[\"regime\"]}')
+        print(f'Regime Confidence: {market[\"confidence\"]:.2f}')
+        print()
+        
+        # Key recommendations
+        recommendations = ai_insights['individual_recommendations']
+        high_priority = [r for r in recommendations if r['urgency'] >= 7]
+        
+        if high_priority:
+          print(f'🚨 HIGH PRIORITY ACTIONS ({len(high_priority)}):')
+          for rec in high_priority[:5]:
+            print(f'  • {rec[\"symbol\"]}: {rec[\"action\"]} (Urgency: {rec[\"urgency\"]}/10)')
+            if rec['reasoning']:
+              print(f'    Reason: {rec[\"reasoning\"][0]}')
+        
+        # Opportunities
+        opportunities = ai_insights['opportunity_scanner']
+        if opportunities:
+          print(f'\\n💰 TOP OPPORTUNITIES ({len(opportunities)}):')
+          for opp in opportunities[:3]:
+            print(f'  • {opp[\"symbol\"]}: {opp[\"type\"]} (Score: {opp[\"score\"]:.2f})')
+        
+        # Exit alerts
+        exits = ai_insights['exit_alerts']
+        if exits:
+          print(f'\\n⚠️  EXIT ALERTS ({len(exits)}):')
+          for alert in exits:
+            print(f'  • {alert[\"symbol\"]}: {alert[\"type\"]} - {alert[\"message\"]}')
+        
+        print(f'\\n✅ Analysis Complete - Check GitHub Pages for full details')
+        "
+        
+        echo "::endgroup::"
+    
+    - name: Setup GitHub Pages
+      if: steps.analysis.outputs.analysis_success == 'true'
+      uses: actions/configure-pages@v4
+    
+    - name: Upload to GitHub Pages
+      if: steps.analysis.outputs.analysis_success == 'true'
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: docs/
+    
+    - name: Deploy to GitHub Pages
+      if: steps.analysis.outputs.analysis_success == 'true'
+      id: deployment
+      uses: actions/deploy-pages@v4
+    
+    - name: Create commit message
+      if: steps.analysis.outputs.analysis_success == 'true'
+      id: commit_msg
+      run: |
+        python -c "
+        import json
+        from datetime import datetime
+        
+        with open('docs/portfolio_summary.json') as f:
+          summary = json.load(f)
+        
+        total_holdings = summary['summary']['total_holdings']
+        market_sentiment = summary['summary']['market_sentiment']
+        bullish = market_sentiment['bullish']
+        bearish = market_sentiment['bearish']
+        
+        msg = f'📊 Portfolio Update: {total_holdings} holdings analyzed'
+        if bullish > bearish:
+          msg += f' | 📈 {bullish} bullish signals'
+        elif bearish > bullish:
+          msg += f' | 📉 {bearish} bearish signals'
+        else:
+          msg += f' | ➡️ {market_sentiment[\"neutral\"]} neutral'
+        
+        print(f'COMMIT_MSG={msg}')
+        " >> $GITHUB_OUTPUT
+    
+    - name: Commit updated data
+      if: steps.analysis.outputs.analysis_success == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "Portfolio Analyzer"
+        
+        git add docs/ || true
+        
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "${{ steps.commit_msg.outputs.COMMIT_MSG }}"
+          git push
+        fi
+    
+    - name: Handle analysis failure
+      if: steps.analysis.outputs.analysis_success == 'false'
+      run: |
+        echo "::error::Portfolio analysis failed"
+        echo "::group::Debug Information"
+        
+        echo "Checking log files..."
+        if [ -d "logs" ]; then
+          ls -la logs/
+          echo "Latest log entries:"
+          tail -20 logs/*.log 2>/dev/null || echo "No log files found"
+        fi
+        
+        echo "Checking output directory..."
+        if [ -d "docs" ]; then
+          ls -la docs/
+        else
+          echo "docs/ directory not created"
+        fi
+        
+        echo "Environment information:"
+        python --version
+        pip list | grep -E "(aiohttp|pandas|numpy|TA-Lib)"
+        
+        echo "::endgroup::"
+        exit 1
+
+  # Parallel job for basic health check
+  health-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Basic health check
+      run: |
+        echo "🏥 Portfolio System Health Check"
+        echo "================================"
+        
+        # Check required files
+        required_files=(
+          "src/main.py"
+          "src/core/config.py"
+          "src/core/data_fetcher.py"
+          "src/core/technical_analyzer.py"
+          "src/core/ai_engine.py"
+          "config/portfolio.json"
+          "requirements.txt"
+        )
+        
+        all_good=true
+        for file in "${required_files[@]}"; do
+          if [ -f "$file" ]; then
+            echo "✅ $file"
+          else
+            echo "❌ $file (missing)"
+            all_good=false
+          fi
+        done
+        
+        if [ "$all_good" = true ]; then
+          echo "✅ All required files present"
+        else
+          echo "❌ Some required files are missing"
+          exit 1
+        fi
+        
+        # Check portfolio configuration
+        python3 -c "
+        import json
+        with open('config/portfolio.json') as f:
+          portfolio = json.load(f)
+        
+        print(f'Portfolio has {len(portfolio)} holdings')
+        required_fields = ['symbol', 'amount']
+        
+        for i, holding in enumerate(portfolio[:3]):  # Check first 3
+          for field in required_fields:
+            assert field in holding, f'Missing {field} in holding {i}'
+        
+        print('✅ Portfolio configuration valid')
+        "
+        
+        echo "✅ Health check completed successfully"

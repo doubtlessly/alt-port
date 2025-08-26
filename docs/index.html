@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Crypto Portfolio Analytics - AI-Driven Investment Intelligence</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+        
+        .status-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #10b981;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .pulse {
+            width: 8px;
+            height: 8px;
+            background: #34d399;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+        
+        .main {
+            padding: 2rem 0;
+        }
+        
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0.75rem 0;
+            padding: 0.75rem;
+            background: #f9fafb;
+            border-radius: 8px;
+        }
+        
+        .metric-label {
+            font-weight: 500;
+            color: #6b7280;
+        }
+        
+        .metric-value {
+            font-weight: 700;
+            color: #1f2937;
+        }
+        
+        .metric-positive {
+            color: #10b981;
+        }
+        
+        .metric-negative {
+            color: #ef4444;
+        }
+        
+        .api-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .endpoint {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .endpoint-url {
+            font-family: 'Monaco', 'Courier New', monospace;
+            background: #1e293b;
+            color: #64748b;
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            margin: 0.5rem 0;
+            overflow-x: auto;
+        }
+        
+        .endpoint-url .method {
+            color: #22c55e;
+            font-weight: bold;
+        }
+        
+        .endpoint-url .url {
+            color: #a5b4fc;
+        }
+        
+        .recommendations {
+            list-style: none;
+        }
+        
+        .recommendation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: #f9fafb;
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+        
+        .rec-buy { border-left-color: #10b981; }
+        .rec-sell { border-left-color: #ef4444; }
+        .rec-hold { border-left-color: #6b7280; }
+        
+        .rec-symbol {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        
+        .rec-action {
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .action-buy { background: #dcfce7; color: #166534; }
+        .action-sell { background: #fee2e2; color: #991b1b; }
+        .action-hold { background: #f3f4f6; color: #374151; }
+        
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin-top: 1rem;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #6b7280;
+        }
+        
+        .error {
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .dashboard { grid-template-columns: 1fr; }
+            .container { padding: 0 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🚀 Crypto Portfolio Analytics</div>
+                <div class="status-badge">
+                    <div class="pulse"></div>
+                    <span id="status">LIVE</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="hero">
+                <h1>AI-Driven Investment Intelligence</h1>
+                <p>Real-time technical analysis and portfolio optimization powered by advanced AI algorithms</p>
+            </div>
+
+            <div id="loading" class="loading">
+                <p>📊 Loading portfolio data...</p>
+            </div>
+
+            <div id="error" class="error" style="display: none;">
+                <p>❌ Unable to load portfolio data. Please try again later.</p>
+            </div>
+
+            <div id="dashboard" style="display: none;">
+                <!-- Portfolio Overview -->
+                <div class="dashboard">
+                    <div class="card">
+                        <h3>📊 Portfolio Health</h3>
+                        <div class="metric">
+                            <span class="metric-label">Overall Score</span>
+                            <span class="metric-value" id="health-score">-</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Risk Level</span>
+                            <span class="metric-value" id="risk-score">-</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Diversification</span>
+                            <span class="metric-value" id="diversification">-</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Momentum</span>
+                            <span class="metric-value" id="momentum">-</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>🎯 Market Overview</h3>
+                        <div class="metric">
+                            <span class="metric-label">Total Holdings</span>
+                            <span class="metric-value" id="total-holdings">-</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Bullish Signals</span>
+                            <span class="metric-value metric-positive" id="bullish-signals">-</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Bearish Signals</span>
+                            <span class="metric-value metric-negative" id="bearish-signals">-</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Neutral Holdings</span>
+                            <span class="metric-value" id="neutral-signals">-</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>⚡ Performance Metrics</h3>
+                        <div class="metric">
+                            <span class="metric-label">Analysis Success</span>
+                            <span class="metric-value" id="success-rate">-</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Data Quality</span>
+                            <span class="metric-value" id="data-quality">-</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Last Updated</span>
+                            <span class="metric-value" id="last-updated">-</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Analysis Duration</span>
+                            <span class="metric-value" id="analysis-duration">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Recommendations -->
+                <div class="card">
+                    <h3>🤖 AI Recommendations</h3>
+                    <div id="recommendations-container">
+                        <ul class="recommendations" id="recommendations-list">
+                            <!-- Recommendations will be populated here -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Portfolio Distribution Chart -->
+                <div class="card">
+                    <h3>📈 Market Sentiment Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="sentimentChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- API Documentation -->
+            <div class="api-section">
+                <h2>🔌 API Endpoints</h2>
+                <p>Access real-time portfolio data programmatically</p>
+
+                <div class="endpoint">
+                    <h4>Portfolio Summary</h4>
+                    <div class="endpoint-url">
+                        <span class="method">GET</span> 
+                        <span class="url">https://yourusername.github.io/alt-port/portfolio_summary.json</span>
+                    </div>
+                    <p>Quick overview with key metrics and top recommendations</p>
+                </div>
+
+                <div class="endpoint">
+                    <h4>Complete Analysis</h4>
+                    <div class="endpoint-url">
+                        <span class="method">GET</span> 
+                        <span class="url">https://yourusername.github.io/alt-port/portfolio_analysis.json</span>
+                    </div>
+                    <p>Full technical analysis with all indicators and AI insights</p>
+                </div>
+
+                <div class="endpoint">
+                    <h4>Individual Symbol</h4>
+                    <div class="endpoint-url">
+                        <span class="method">GET</span> 
+                        <span class="url">https://yourusername.github.io/alt-port/symbols/{symbol}.json</span>
+                    </div>
+                    <p>Detailed analysis for specific cryptocurrency (e.g., /symbols/btc.json)</p>
+                </div>
+
+                <h3>🔧 Usage Examples</h3>
+                <div class="endpoint-url">
+# Python<br>
+import requests<br>
+data = requests.get('https://yourusername.github.io/alt-port/portfolio_summary.json').json()<br><br>
+# JavaScript<br>
+const response = await fetch('https://yourusername.github.io/alt-port/portfolio_summary.json');<br>
+const data = await response.json();
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>🚀 Crypto Portfolio Analytics • Automated AI-driven insights • Updated every 4 hours</p>
+            <p>Built with world-class technical analysis and machine learning</p>
+        </div>
+    </footer>
+
+    <script>
+        let portfolioData = null;
+        let sentimentChart = null;
+
+        async function loadPortfolioData() {
+            try {
+                const response = await fetch('./portfolio_summary.json');
+                if (!response.ok) throw new Error('Failed to fetch data');
+                
+                const data = await response.json();
+                portfolioData = data;
+                
+                updateDashboard(data);
+                createSentimentChart(data);
+                
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('dashboard').style.display = 'block';
+                
+            } catch (error) {
+                console.error('Error loading portfolio data:', error);
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+            }
+        }
+
+        function updateDashboard(data) {
+            // Portfolio Health
+            const health = data.ai_insights?.portfolio_health || {};
+            document.getElementById('health-score').textContent = 
+                (health.overall_score * 100).toFixed(1) + '%';
+            document.getElementById('risk-score').textContent = 
+                (health.risk_score * 100).toFixed(1) + '%';
+            document.getElementById('diversification').textContent = 
+                (health.diversification_score * 100).toFixed(1) + '%';
+            document.getElementById('momentum').textContent = 
+                (health.momentum_score * 100).toFixed(1) + '%';
+
+            // Market Overview
+            const sentiment = data.summary?.market_sentiment || {};
+            document.getElementById('total-holdings').textContent = 
+                data.summary?.total_analyzed || '-';
+            document.getElementById('bullish-signals').textContent = 
+                sentiment.bullish || 0;
+            document.getElementById('bearish-signals').textContent = 
+                sentiment.bearish || 0;
+            document.getElementById('neutral-signals').textContent = 
+                sentiment.neutral || 0;
+
+            // Performance Metrics
+            const metadata = data.metadata || {};
+            document.getElementById('success-rate').textContent = 
+                ((metadata.successful_analyses / metadata.total_holdings) * 100).toFixed(1) + '%';
+            document.getElementById('data-quality').textContent = 
+                (data.summary?.data_quality_average * 100).toFixed(1) + '%';
+            document.getElementById('last-updated').textContent = 
+                new Date(data.generated_at).toLocaleString();
+            document.getElementById('analysis-duration').textContent = 
+                metadata.analysis_duration?.toFixed(1) + 's';
+
+            // Recommendations
+            updateRecommendations(data.ai_insights?.top_recommendations || []);
+        }
+
+        function updateRecommendations(recommendations) {
+            const container = document.getElementById('recommendations-list');
+            container.innerHTML = '';
+
+            recommendations.slice(0, 8).forEach(rec => {
+                const li = document.createElement('li');
+                li.className = `recommendation rec-${rec.action?.replace('_', '-') || 'hold'}`;
+                
+                li.innerHTML = `
+                    <div>
+                        <div class="rec-symbol">${rec.symbol}</div>
+                        <div style="font-size: 0.875rem; color: #6b7280;">
+                            Confidence: ${(rec.confidence * 100).toFixed(0)}% • 
+                            Urgency: ${rec.urgency}/10
+                        </div>
+                    </div>
+                    <div class="rec-action action-${rec.action?.replace('_', '-') || 'hold'}">
+                        ${rec.action?.replace('_', ' ') || 'hold'}
+                    </div>
+                `;
+                
+                container.appendChild(li);
+            });
+        }
+
+        function createSentimentChart(data) {
+            const ctx = document.getElementById('sentimentChart').getContext('2d');
+            const sentiment = data.summary?.market_sentiment || {};
+            
+            if (sentimentChart) {
+                sentimentChart.destroy();
+            }
+            
+            sentimentChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Bullish', 'Neutral', 'Bearish'],
+                    datasets: [{
+                        data: [
+                            sentiment.bullish || 0,
+                            sentiment.neutral || 0,
+                            sentiment.bearish || 0
+                        ],
+                        backgroundColor: [
+                            '#10b981',
+                            '#6b7280',
+                            '#ef4444'
+                        ],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateStatus() {
+            const now = new Date();
+            const hours = now.getHours();
+            const isMarketHours = hours >= 0 && hours < 24; // Crypto is 24/7
+            
+            document.getElementById('status').textContent = 
+                isMarketHours ? 'LIVE' : 'STANDBY';
+        }
+
+        // Initialize
+        loadPortfolioData();
+        updateStatus();
+        
+        // Update status every minute
+        setInterval(updateStatus, 60000);
+        
+        // Refresh data every 5 minutes
+        setInterval(loadPortfolioData, 300000);
+    </script>
+</body>
+</html>
