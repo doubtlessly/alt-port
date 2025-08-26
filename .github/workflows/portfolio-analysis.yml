@@ -251,12 +251,13 @@ jobs:
         with open('docs/portfolio_summary.json') as f:
           summary = json.load(f)
         
-        total_holdings = summary['summary']['total_holdings']
+        total_holdings = summary['metadata']['total_holdings']
+        total_analyzed = summary['summary']['total_analyzed']
         market_sentiment = summary['summary']['market_sentiment']
         bullish = market_sentiment['bullish']
         bearish = market_sentiment['bearish']
         
-        msg = f'📊 Portfolio Update: {total_holdings} holdings analyzed'
+        msg = f'📊 Portfolio Update: {total_analyzed}/{total_holdings} holdings analyzed'
         if bullish > bearish:
           msg += f' | 📈 {bullish} bullish signals'
         elif bearish > bullish:
