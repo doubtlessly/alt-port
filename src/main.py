@@ -2,6 +2,12 @@
 """
 Main entry point for Crypto Portfolio Analytics System
 Optimized for GitHub Actions and maximum ROI insights
+
+This module handles multiple execution environments:
+- Direct script execution (python src/main.py)
+- Module execution (python -m src.main)
+- GitHub Actions (python src/main.py from repo root)
+- Local development (various Python path configurations)
 """
 
 import asyncio
@@ -13,21 +19,150 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Any
 
-from .core.config import Config
-from .core.data_fetcher import DataFetcher
-from .core.technical_analyzer import TechnicalAnalyzer
-from .core.ai_engine import AIEngine
+# === ROBUST IMPORT SYSTEM ===
+# Handles all execution environments with multiple fallback strategies
 
-# Configure logging for GitHub Actions
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.StreamHandler(sys.stdout),
-        logging.FileHandler(Config.LOGS_DIR / 'portfolio_analyzer.log', mode='a')
-    ]
-)
-logger = logging.getLogger(__name__)
+def setup_imports():
+    """
+    World-class import setup that works in all environments:
+    1. GitHub Actions (script execution from repo root)
+    2. Local development (various Python paths)
+    3. Module execution (python -m)
+    4. Direct script execution
+    """
+    # Get the absolute path of this file
+    current_file = Path(__file__).resolve()
+    src_dir = current_file.parent
+    repo_root = src_dir.parent
+    
+    # Strategy 1: Add src directory to Python path
+    if str(src_dir) not in sys.path:
+        sys.path.insert(0, str(src_dir))
+    
+    # Strategy 2: Add repo root to Python path (for GitHub Actions)
+    if str(repo_root) not in sys.path:
+        sys.path.insert(0, str(repo_root))
+    
+    # Strategy 3: Ensure core module is discoverable
+    core_dir = src_dir / "core"
+    if str(core_dir) not in sys.path:
+        sys.path.insert(0, str(core_dir))
+
+# Setup imports before any module imports
+setup_imports()
+
+# === IMPORT WITH MULTIPLE FALLBACK STRATEGIES ===
+def import_modules():
+    """Import required modules with multiple fallback strategies"""
+    
+    # Strategy 1: Try relative imports (when run as module)
+    try:
+        from .core.config import Config
+        from .core.data_fetcher import DataFetcher
+        from .core.technical_analyzer import TechnicalAnalyzer
+        from .core.ai_engine import AIEngine
+        return Config, DataFetcher, TechnicalAnalyzer, AIEngine
+    except ImportError as e1:
+        pass
+    
+    # Strategy 2: Try absolute imports from src
+    try:
+        from core.config import Config
+        from core.data_fetcher import DataFetcher
+        from core.technical_analyzer import TechnicalAnalyzer
+        from core.ai_engine import AIEngine
+        return Config, DataFetcher, TechnicalAnalyzer, AIEngine
+    except ImportError as e2:
+        pass
+    
+    # Strategy 3: Try src.core imports (from repo root)
+    try:
+        from src.core.config import Config
+        from src.core.data_fetcher import DataFetcher
+        from src.core.technical_analyzer import TechnicalAnalyzer
+        from src.core.ai_engine import AIEngine
+        return Config, DataFetcher, TechnicalAnalyzer, AIEngine
+    except ImportError as e3:
+        pass
+    
+    # Strategy 4: Try direct imports with explicit path manipulation
+    try:
+        current_dir = Path(__file__).parent
+        core_path = current_dir / "core"
+        
+        # Import each module individually
+        import importlib.util
+        
+        def load_module(module_name, file_path):
+            spec = importlib.util.spec_from_file_location(module_name, file_path)
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+            return module
+        
+        config_module = load_module("config", core_path / "config.py")
+        data_fetcher_module = load_module("data_fetcher", core_path / "data_fetcher.py")
+        technical_analyzer_module = load_module("technical_analyzer", core_path / "technical_analyzer.py")
+        ai_engine_module = load_module("ai_engine", core_path / "ai_engine.py")
+        
+        return (config_module.Config, 
+                data_fetcher_module.DataFetcher,
+                technical_analyzer_module.TechnicalAnalyzer,
+                ai_engine_module.AIEngine)
+    except Exception as e4:
+        # Final fallback with detailed error reporting
+        print("🚨 CRITICAL: Failed to import required modules!")
+        print("=" * 60)
+        print(f"Current working directory: {Path.cwd()}")
+        print(f"Script location: {Path(__file__).resolve()}")
+        print(f"Python path: {sys.path[:5]}...")  # Show first 5 entries
+        print("=" * 60)
+        print("Import attempts failed:")
+        print(f"1. Relative imports: {e1}")
+        print(f"2. Core imports: {e2}")
+        print(f"3. Src.core imports: {e3}")
+        print(f"4. Direct imports: {e4}")
+        print("=" * 60)
+        
+        # Check if core files exist
+        current_dir = Path(__file__).parent
+        core_dir = current_dir / "core"
+        print(f"Core directory exists: {core_dir.exists()}")
+        if core_dir.exists():
+            core_files = list(core_dir.glob("*.py"))
+            print(f"Core files found: {[f.name for f in core_files]}")
+        
+        raise ImportError(
+            "Failed to import core modules. Please ensure all files are present and "
+            "the script is run from the correct directory. See detailed error above."
+        )
+
+# Import all required modules
+Config, DataFetcher, TechnicalAnalyzer, AIEngine = import_modules()
+
+# === LOGGING SETUP ===
+# Configure logging after successful imports
+def setup_logging():
+    """Setup robust logging for all environments"""
+    try:
+        # Ensure logs directory exists
+        Config.setup_directories()
+        log_file = Config.LOGS_DIR / 'portfolio_analyzer.log'
+    except:
+        # Fallback if Config is not available
+        log_file = Path("portfolio_analyzer.log")
+    
+    # Configure logging
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.StreamHandler(sys.stdout),
+            logging.FileHandler(log_file, mode='a')
+        ]
+    )
+    return logging.getLogger(__name__)
+
+logger = setup_logging()
 
 class CryptoPortfolioSystem:
     """Main portfolio analytics system"""
@@ -594,7 +729,19 @@ async def main():
         
     except Exception as e:
         logger.error(f"❌ System error: {e}")
+        # Print stack trace for debugging
+        import traceback
+        traceback.print_exc()
         sys.exit(1)
 
 if __name__ == "__main__":
+    # Additional environment diagnostics for debugging
+    print(f"🔍 Execution Environment:")
+    print(f"   Python version: {sys.version}")
+    print(f"   Current directory: {Path.cwd()}")
+    print(f"   Script location: {Path(__file__).resolve()}")
+    print(f"   Python path entries: {len(sys.path)}")
+    print()
+    
+    # Run the main function
     asyncio.run(main())

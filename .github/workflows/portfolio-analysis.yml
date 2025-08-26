@@ -67,15 +67,47 @@ jobs:
       id: analysis
       run: |
         echo "::group::Portfolio Analysis"
-        python src/main.py
+        
+        # Multiple execution strategies for maximum reliability
+        echo "🚀 Starting portfolio analysis with robust execution..."
+        
+        # Strategy 1: Direct script execution (should work with new import system)
+        echo "Attempting direct script execution..."
+        if python src/main.py; then
+          echo "✅ Direct execution successful"
+          analysis_success=true
+        else
+          echo "⚠️ Direct execution failed, trying module execution..."
+          
+          # Strategy 2: Module execution
+          if python -m src.main; then
+            echo "✅ Module execution successful"
+            analysis_success=true
+          else
+            echo "⚠️ Module execution failed, trying with PYTHONPATH..."
+            
+            # Strategy 3: With explicit PYTHONPATH
+            export PYTHONPATH="${PWD}:${PWD}/src:${PYTHONPATH}"
+            if python src/main.py; then
+              echo "✅ PYTHONPATH execution successful"
+              analysis_success=true
+            else
+              echo "❌ All execution strategies failed"
+              analysis_success=false
+            fi
+          fi
+        fi
+        
         echo "::endgroup::"
         
         # Set outputs for later steps
-        if [ -f "docs/portfolio_summary.json" ]; then
+        if [ "$analysis_success" = true ] && [ -f "docs/portfolio_summary.json" ]; then
           echo "analysis_success=true" >> $GITHUB_OUTPUT
           echo "timestamp=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> $GITHUB_OUTPUT
+          echo "✅ Portfolio analysis completed successfully"
         else
           echo "analysis_success=false" >> $GITHUB_OUTPUT
+          echo "❌ Portfolio analysis failed"
         fi
     
     - name: Validate output files
