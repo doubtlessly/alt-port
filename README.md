@@ -2,9 +2,9 @@
 
 > **World-class AI-driven crypto portfolio analysis system optimized for maximum ROI**
 
-[![Analysis Status](https://img.shields.io/badge/Analysis-Live-brightgreen)](https://yourusername.github.io/alt-port)
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://yourusername.github.io/alt-port)
-[![Update Frequency](https://img.shields.io/badge/Updates-Every%204h-orange)](https://github.com/yourusername/alt-port/actions)
+[![Analysis Status](https://img.shields.io/badge/Analysis-Live-brightgreen)](https://doubtlessly.github.io/alt-port)
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://doubtlessly.github.io/alt-port)
+[![Update Frequency](https://img.shields.io/badge/Updates-Every%204h-orange)](https://github.com/doubtlessly/alt-port/actions)
 
 ## 🎯 **System Overview**
 
@@ -45,7 +45,7 @@ An automated cryptocurrency portfolio analysis system that:
 
 ### 1. **Fork & Clone**
 ```bash
-git clone https://github.com/yourusername/alt-port.git
+git clone https://github.com/doubtlessly/alt-port.git
 cd alt-port
 ```
 
@@ -77,19 +77,19 @@ Once deployed, access your data at:
 
 ### **Portfolio Summary**
 ```
-GET https://yourusername.github.io/alt-port/portfolio_summary.json
+GET https://doubtlessly.github.io/alt-port/portfolio_summary.json
 ```
 Quick overview with key metrics and recommendations
 
 ### **Complete Analysis**
 ```
-GET https://yourusername.github.io/alt-port/portfolio_analysis.json
+GET https://doubtlessly.github.io/alt-port/portfolio_analysis.json
 ```
 Full technical analysis with all indicators
 
 ### **Individual Symbols**
 ```
-GET https://yourusername.github.io/alt-port/symbols/{symbol}.json
+GET https://doubtlessly.github.io/alt-port/symbols/{symbol}.json
 ```
 Detailed analysis for specific cryptocurrency
 
@@ -100,7 +100,7 @@ Detailed analysis for specific cryptocurrency
 import requests
 
 # Get portfolio insights
-response = requests.get('https://yourusername.github.io/alt-port/portfolio_summary.json')
+response = requests.get('https://doubtlessly.github.io/alt-port/portfolio_summary.json')
 data = response.json()
 
 # Check recommendations
@@ -111,7 +111,7 @@ for rec in data['ai_insights']['top_recommendations']:
 ### **JavaScript**
 ```javascript
 // Fetch portfolio data
-const response = await fetch('https://yourusername.github.io/alt-port/portfolio_summary.json');
+const response = await fetch('https://doubtlessly.github.io/alt-port/portfolio_summary.json');
 const portfolio = await response.json();
 
 // Find high-priority actions
@@ -245,7 +245,7 @@ MIT License - See [LICENSE](LICENSE) for details
 3. **Enable GitHub Pages** and Actions
 4. **Watch your portfolio** get analyzed automatically!
 
-**Access your live dashboard at:** `https://yourusername.github.io/alt-port`
+**Access your live dashboard at:** `https://doubtlessly.github.io/alt-port`
 
 ---
 
