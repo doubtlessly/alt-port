@@ -1,35 +1,35 @@
 {
-  "generated_at": "2025-10-11T20:20:36.724447",
+  "generated_at": "2025-10-12T01:29:20.642637",
   "summary": {
     "total_analyzed": 42,
     "market_sentiment": {
       "bullish": 0,
-      "bearish": 22,
-      "neutral": 20
+      "bearish": 21,
+      "neutral": 21
     },
     "risk_distribution": {
       "medium": 2,
       "high": 6,
       "very_high": 34
     },
-    "data_quality_average": 0.8470000000000001
+    "data_quality_average": 0.8475238095238095
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.8519988060746684,
+      "risk_score": 0.7691797206245448,
       "diversification_score": 0.5,
-      "momentum_score": 0.2578107614212996,
-      "overall_score": 0.3019373184488771
+      "momentum_score": 0.25480786668383304,
+      "overall_score": 0.3285427153530961
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "accumulate",
+        "action": "buy",
         "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.08,
-        "expected_roi": 0.0,
+        "urgency": 6,
+        "target_allocation": 0.12,
+        "expected_roi": 0.09565190167030314,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -39,29 +39,29 @@
       },
       {
         "symbol": "ETH",
-        "action": "sell",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0,
+        "urgency": 6,
+        "target_allocation": 0.04,
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Sell macd: MACD bearish crossover"
+          "Strong rsi_14: Oversold RSI: 20.9"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "SOL",
-        "action": "strong_buy",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.1,
-        "expected_roi": 0.08817345046119292,
+        "urgency": 5,
+        "target_allocation": 0.025,
+        "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.02)",
-          "Strong supertrend: SuperTrend bullish"
+          "Strong supertrend: SuperTrend bullish",
+          "Strong rsi_14: Oversold RSI: 16.5"
         ],
         "risk_level": "moderate"
       },
@@ -73,7 +73,7 @@
         "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
-          "Strong bollinger_bands: Price at lower Bollinger Band (-0.04)",
+          "Sell supertrend: SuperTrend bearish",
           "Sell supertrend: SuperTrend bearish",
           "Sell supertrend: SuperTrend bearish"
         ],
@@ -87,16 +87,16 @@
         "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
-          "Strong bollinger_bands: Price at lower Bollinger Band (-0.04)",
+          "Strong bollinger_bands: Price at lower Bollinger Band (0.04)",
           "Sell supertrend: SuperTrend bearish",
-          "Sell supertrend: SuperTrend bearish"
+          "Strong rsi_14: Oversold RSI: 21.1"
         ],
         "risk_level": "aggressive"
       }
     ],
     "executive_summary": {
       "overall_health": "risky",
-      "immediate_actions_needed": 32,
+      "immediate_actions_needed": 30,
       "profit_opportunities": 5,
       "risk_alerts": 1,
       "portfolio_balance": "balanced",
@@ -104,25 +104,25 @@
         {
           "symbol": "MOG",
           "action": "sell",
-          "reasoning": "Strong bollinger_bands: Price at lower Bollinger Band (0.05)"
+          "reasoning": "Sell supertrend: SuperTrend bearish"
         },
         {
           "symbol": "OM",
           "action": "stop_loss",
-          "reasoning": "Strong bollinger_bands: Price at lower Bollinger Band (-0.08)"
+          "reasoning": "Strong rsi_14: Oversold RSI: 20.8"
         },
         {
-          "symbol": "SUPER",
+          "symbol": "RIO",
           "action": "strong_buy",
-          "reasoning": "Strong bollinger_bands: Price at lower Bollinger Band (0.04)"
+          "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2025-10-11T20:20:36.722905",
-    "analysis_duration": 17.33288264274597,
+    "generated_at": "2025-10-12T01:29:20.641180",
+    "analysis_duration": 16.828949451446533,
     "total_holdings": 48,
     "successful_analyses": 42,
     "data_completeness": 0.875,
