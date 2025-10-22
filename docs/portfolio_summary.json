@@ -1,67 +1,67 @@
 {
-  "generated_at": "2025-10-21T20:24:21.726585",
+  "generated_at": "2025-10-22T01:39:25.934197",
   "summary": {
     "total_analyzed": 42,
     "market_sentiment": {
       "bullish": 0,
-      "bearish": 20,
-      "neutral": 22
+      "bearish": 19,
+      "neutral": 23
     },
     "risk_distribution": {
       "medium": 2,
       "high": 6,
       "very_high": 34
     },
-    "data_quality_average": 0.8522380952380954
+    "data_quality_average": 0.8527619047619046
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.5807808906072165,
+      "risk_score": 0.675498373510898,
       "diversification_score": 0.5,
-      "momentum_score": 0.36301657964999773,
-      "overall_score": 0.42741189634759374
+      "momentum_score": 0.27231427267119246,
+      "overall_score": 0.3656052997200982
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "strong_buy",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09580765310681656,
+        "urgency": 5,
+        "target_allocation": 0.04,
+        "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Strong macd: MACD bullish crossover"
+          "Sell macd: MACD bearish crossover"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "ETH",
-        "action": "strong_buy",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 9,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09340027020134246,
+        "urgency": 8,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Strong macd: MACD bullish crossover"
+          "Sell macd: MACD bearish crossover"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "SOL",
-        "action": "strong_buy",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 9,
-        "target_allocation": 0.1,
-        "expected_roi": 0.09172622311866056,
+        "urgency": 7,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Strong macd: MACD bullish crossover"
+          "Sell supertrend: SuperTrend bearish"
         ],
         "risk_level": "moderate"
       },
@@ -69,7 +69,7 @@
         "symbol": "BONK",
         "action": "sell",
         "confidence": 1.0,
-        "urgency": 7,
+        "urgency": 9,
         "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
@@ -83,7 +83,7 @@
         "symbol": "PEPE",
         "action": "sell",
         "confidence": 1.0,
-        "urgency": 7,
+        "urgency": 9,
         "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
@@ -96,11 +96,16 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 32,
+      "immediate_actions_needed": 36,
       "profit_opportunities": 5,
       "risk_alerts": 2,
       "portfolio_balance": "balanced",
       "key_recommendations": [
+        {
+          "symbol": "MAGIC",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
         {
           "symbol": "MOG",
           "action": "sell",
@@ -110,19 +115,14 @@
           "symbol": "COOKIE",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
-        {
-          "symbol": "OM",
-          "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
-      "performance_outlook": "neutral"
+      "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2025-10-21T20:24:21.724761",
-    "analysis_duration": 17.713300466537476,
+    "generated_at": "2025-10-22T01:39:25.932656",
+    "analysis_duration": 16.768405199050903,
     "total_holdings": 48,
     "successful_analyses": 42,
     "data_completeness": 0.875,
