@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-11-04T04:25:07.920234",
+  "generated_at": "2025-11-04T08:29:52.825090",
   "summary": {
     "total_analyzed": 42,
     "market_sentiment": {
-      "bullish": 0,
-      "bearish": 11,
-      "neutral": 31
+      "bullish": 1,
+      "bearish": 15,
+      "neutral": 26
     },
     "risk_distribution": {
       "medium": 2,
@@ -17,19 +17,19 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.5532392683613034,
+      "risk_score": 0.6342895270550605,
       "diversification_score": 0.5,
-      "momentum_score": 0.371948367157916,
-      "overall_score": 0.4395696995988709
+      "momentum_score": 0.3240445954355875,
+      "overall_score": 0.396585022793509
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "strong_buy",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09647339367878408,
+        "urgency": 7,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -46,8 +46,8 @@
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
-          "Strong supertrend: SuperTrend bullish",
-          "Sell macd: MACD bearish crossover"
+          "Strong bollinger_bands: Price at lower Bollinger Band (-0.03)",
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
       },
@@ -60,10 +60,10 @@
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.03)",
+          "Strong bollinger_bands: Price at lower Bollinger Band (-0.07)",
           "Strong supertrend: SuperTrend bullish"
         ],
-        "risk_level": "conservative"
+        "risk_level": "moderate"
       },
       {
         "symbol": "BONK",
@@ -73,7 +73,7 @@
         "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
-          "Sell supertrend: SuperTrend bearish",
+          "Strong bollinger_bands: Price at lower Bollinger Band (-0.03)",
           "Sell supertrend: SuperTrend bearish",
           "Sell supertrend: SuperTrend bearish"
         ],
@@ -87,7 +87,7 @@
         "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.03)",
+          "Strong bollinger_bands: Price at lower Bollinger Band (-0.02)",
           "Sell supertrend: SuperTrend bearish",
           "Sell supertrend: SuperTrend bearish"
         ],
@@ -96,7 +96,7 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 36,
+      "immediate_actions_needed": 34,
       "profit_opportunities": 5,
       "risk_alerts": 2,
       "portfolio_balance": "balanced",
@@ -107,22 +107,22 @@
           "reasoning": "Sell supertrend: SuperTrend bearish"
         },
         {
+          "symbol": "USELESS",
+          "action": "strong_buy",
+          "reasoning": "Strong bollinger_bands: Price at lower Bollinger Band (0.02)"
+        },
+        {
           "symbol": "OM",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
-        {
-          "symbol": "KDA",
-          "action": "sell",
-          "reasoning": "Strong rsi_14: Oversold RSI: 18.6"
         }
       ],
       "performance_outlook": "neutral"
     }
   },
   "metadata": {
-    "generated_at": "2025-11-04T04:25:07.918645",
-    "analysis_duration": 16.457881927490234,
+    "generated_at": "2025-11-04T08:29:52.823570",
+    "analysis_duration": 17.330474853515625,
     "total_holdings": 48,
     "successful_analyses": 42,
     "data_completeness": 0.875,
