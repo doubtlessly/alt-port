@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-16T16:24:09.466164",
+  "generated_at": "2025-11-16T20:22:40.497427",
   "summary": {
     "total_analyzed": 42,
     "market_sentiment": {
@@ -17,18 +17,18 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.5910690178502607,
+      "risk_score": 0.5929429941242447,
       "diversification_score": 0.5,
-      "momentum_score": 0.38758503627847146,
-      "overall_score": 0.43217200614273693
+      "momentum_score": 0.36386055014219143,
+      "overall_score": 0.42363918533931555
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "reduce",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.04,
+        "urgency": 7,
+        "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
@@ -39,15 +39,15 @@
       },
       {
         "symbol": "ETH",
-        "action": "reduce",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.04,
+        "urgency": 7,
+        "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Strong macd: MACD bullish crossover"
+          "Sell supertrend: SuperTrend bearish"
         ],
         "risk_level": "conservative"
       },
@@ -67,15 +67,15 @@
       },
       {
         "symbol": "BONK",
-        "action": "buy",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.07500000000000001,
-        "expected_roi": 0.08896901460538849,
+        "urgency": 7,
+        "target_allocation": 0.025,
+        "expected_roi": 0.05,
         "reasoning": [
           "Sell supertrend: SuperTrend bearish",
           "Strong supertrend: SuperTrend bullish",
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.01)"
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "moderate"
       },
@@ -102,6 +102,11 @@
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
+          "symbol": "RAY",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
+        {
           "symbol": "MAGIC",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
@@ -110,19 +115,14 @@
           "symbol": "MOG",
           "action": "sell",
           "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
-        {
-          "symbol": "VIRTUAL",
-          "action": "strong_buy",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
       "performance_outlook": "neutral"
     }
   },
   "metadata": {
-    "generated_at": "2025-11-16T16:24:09.464522",
-    "analysis_duration": 17.572242259979248,
+    "generated_at": "2025-11-16T20:22:40.495514",
+    "analysis_duration": 16.36998200416565,
     "total_holdings": 48,
     "successful_analyses": 42,
     "data_completeness": 0.875,
