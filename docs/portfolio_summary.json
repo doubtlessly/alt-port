@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-11-18T12:44:00.440372",
+  "generated_at": "2025-11-18T16:29:37.921120",
   "summary": {
     "total_analyzed": 42,
     "market_sentiment": {
       "bullish": 0,
-      "bearish": 16,
-      "neutral": 26
+      "bearish": 14,
+      "neutral": 28
     },
     "risk_distribution": {
       "medium": 2,
@@ -17,32 +17,18 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.60952728210074,
+      "risk_score": 0.5890628072118189,
       "diversification_score": 0.5,
-      "momentum_score": 0.44098408786271825,
-      "overall_score": 0.44381893525399274
+      "momentum_score": 0.4584196333850181,
+      "overall_score": 0.4564522753910664
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "sell",
+        "action": "stop_loss",
         "confidence": 1.0,
-        "urgency": 7,
+        "urgency": 10,
         "target_allocation": 0,
-        "expected_roi": 0.05,
-        "reasoning": [
-          "Sell macd: MACD bearish crossover",
-          "Strong supertrend: SuperTrend bullish",
-          "Sell macd: MACD bearish crossover"
-        ],
-        "risk_level": "conservative"
-      },
-      {
-        "symbol": "ETH",
-        "action": "accumulate",
-        "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.08,
         "expected_roi": 0.0,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
@@ -52,12 +38,26 @@
         "risk_level": "conservative"
       },
       {
-        "symbol": "SOL",
-        "action": "sell",
+        "symbol": "ETH",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0,
+        "urgency": 6,
+        "target_allocation": 0.04,
         "expected_roi": 0.05,
+        "reasoning": [
+          "Sell macd: MACD bearish crossover",
+          "Strong supertrend: SuperTrend bullish",
+          "Strong macd: MACD bullish crossover"
+        ],
+        "risk_level": "conservative"
+      },
+      {
+        "symbol": "SOL",
+        "action": "buy",
+        "confidence": 1.0,
+        "urgency": 6,
+        "target_allocation": 0.07500000000000001,
+        "expected_roi": 0.09106864789155204,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -67,15 +67,15 @@
       },
       {
         "symbol": "BONK",
-        "action": "reduce",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0.025,
+        "urgency": 9,
+        "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
           "Sell supertrend: SuperTrend bearish",
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish"
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.04)"
         ],
         "risk_level": "moderate"
       },
@@ -96,15 +96,15 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 34,
+      "immediate_actions_needed": 35,
       "profit_opportunities": 5,
       "risk_alerts": 2,
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "RAY",
+          "symbol": "BTC",
           "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
+          "reasoning": "Sell macd: MACD bearish crossover"
         },
         {
           "symbol": "MAGIC",
@@ -121,8 +121,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2025-11-18T12:44:00.438625",
-    "analysis_duration": 17.318315267562866,
+    "generated_at": "2025-11-18T16:29:37.919776",
+    "analysis_duration": 16.697303771972656,
     "total_holdings": 48,
     "successful_analyses": 42,
     "data_completeness": 0.875,
