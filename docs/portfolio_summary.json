@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-25T16:29:45.971691",
+  "generated_at": "2025-11-25T20:25:02.286812",
   "summary": {
     "total_analyzed": 42,
     "market_sentiment": {
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.6118353332011315,
+      "risk_score": 0.6264022084933388,
       "diversification_score": 0.5,
-      "momentum_score": 0.1685656221105481,
-      "overall_score": 0.3522434296364722
+      "momentum_score": 0.17016997682767593,
+      "overall_score": 0.34792258944477905
     },
     "top_recommendations": [
       {
@@ -43,7 +43,7 @@
         "confidence": 1.0,
         "urgency": 8,
         "target_allocation": 0.15,
-        "expected_roi": 0.09288838547980835,
+        "expected_roi": 0.09287545911360504,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong macd: MACD bullish crossover",
@@ -53,11 +53,11 @@
       },
       {
         "symbol": "SOL",
-        "action": "reduce",
+        "action": "stop_loss",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0.04,
-        "expected_roi": 0.05,
+        "urgency": 10,
+        "target_allocation": 0,
+        "expected_roi": 0.0,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -96,11 +96,16 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 37,
+      "immediate_actions_needed": 38,
       "profit_opportunities": 5,
-      "risk_alerts": 4,
+      "risk_alerts": 3,
       "portfolio_balance": "balanced",
       "key_recommendations": [
+        {
+          "symbol": "SOL",
+          "action": "stop_loss",
+          "reasoning": "Strong macd: MACD bullish crossover"
+        },
         {
           "symbol": "SYRUP",
           "action": "strong_buy",
@@ -110,19 +115,14 @@
           "symbol": "MAGIC",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
-        {
-          "symbol": "MAV",
-          "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2025-11-25T16:29:45.969985",
-    "analysis_duration": 16.650291204452515,
+    "generated_at": "2025-11-25T20:25:02.284920",
+    "analysis_duration": 17.93042540550232,
     "total_holdings": 48,
     "successful_analyses": 42,
     "data_completeness": 0.875,
