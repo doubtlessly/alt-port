@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-29T04:25:51.803561",
+  "generated_at": "2025-11-29T08:27:44.204167",
   "summary": {
     "total_analyzed": 41,
     "market_sentiment": {
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.5414926883369455,
+      "risk_score": 0.5483051106477008,
       "diversification_score": 0.5,
-      "momentum_score": 0.2613636273070632,
-      "overall_score": 0.40662364632337256
+      "momentum_score": 0.25747907143221593,
+      "overall_score": 0.4030579869281717
     },
     "top_recommendations": [
       {
@@ -29,7 +29,7 @@
         "confidence": 1.0,
         "urgency": 6,
         "target_allocation": 0.12,
-        "expected_roi": 0.09610271926938421,
+        "expected_roi": 0.096137491756453,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -53,11 +53,11 @@
       },
       {
         "symbol": "SOL",
-        "action": "reduce",
+        "action": "stop_loss",
         "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.04,
-        "expected_roi": 0.05,
+        "urgency": 10,
+        "target_allocation": 0,
+        "expected_roi": 0.0,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -96,11 +96,16 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 33,
+      "immediate_actions_needed": 34,
       "profit_opportunities": 5,
       "risk_alerts": 3,
       "portfolio_balance": "balanced",
       "key_recommendations": [
+        {
+          "symbol": "SOL",
+          "action": "stop_loss",
+          "reasoning": "Strong macd: MACD bullish crossover"
+        },
         {
           "symbol": "SYRUP",
           "action": "strong_buy",
@@ -110,19 +115,14 @@
           "symbol": "MAV",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
-        {
-          "symbol": "REZ",
-          "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2025-11-29T04:25:51.801800",
-    "analysis_duration": 16.773231983184814,
+    "generated_at": "2025-11-29T08:27:44.202410",
+    "analysis_duration": 15.862704992294312,
     "total_holdings": 48,
     "successful_analyses": 41,
     "data_completeness": 0.8541666666666666,
