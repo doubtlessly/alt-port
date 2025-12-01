@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-01T04:52:31.035053",
+  "generated_at": "2025-12-01T08:34:10.972132",
   "summary": {
     "total_analyzed": 41,
     "market_sentiment": {
@@ -17,18 +17,18 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.6499095625006509,
+      "risk_score": 0.7488947575759277,
       "diversification_score": 0.5,
-      "momentum_score": 0.18132697672056558,
-      "overall_score": 0.3438058047399715
+      "momentum_score": 0.18199796126416729,
+      "overall_score": 0.3110344012294132
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "reduce",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0.04,
+        "urgency": 9,
+        "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
@@ -39,11 +39,11 @@
       },
       {
         "symbol": "ETH",
-        "action": "buy",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 6,
-        "target_allocation": 0.12,
-        "expected_roi": 0.09386647215168972,
+        "urgency": 7,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -74,7 +74,7 @@
         "expected_roi": 0.05,
         "reasoning": [
           "Sell supertrend: SuperTrend bearish",
-          "Strong bollinger_bands: Price at lower Bollinger Band (-0.03)",
+          "Sell supertrend: SuperTrend bearish",
           "Sell supertrend: SuperTrend bearish"
         ],
         "risk_level": "moderate"
@@ -88,32 +88,32 @@
         "expected_roi": 0.05,
         "reasoning": [
           "Sell supertrend: SuperTrend bearish",
-          "Strong bollinger_bands: Price at lower Bollinger Band (-0.05)",
+          "Strong bollinger_bands: Price at lower Bollinger Band (0.04)",
           "Sell supertrend: SuperTrend bearish"
         ],
         "risk_level": "moderate"
       }
     ],
     "executive_summary": {
-      "overall_health": "good",
-      "immediate_actions_needed": 31,
+      "overall_health": "risky",
+      "immediate_actions_needed": 32,
       "profit_opportunities": 5,
-      "risk_alerts": 2,
+      "risk_alerts": 3,
       "portfolio_balance": "balanced",
       "key_recommendations": [
-        {
-          "symbol": "MAGIC",
-          "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
         {
           "symbol": "MOG",
           "action": "sell",
           "reasoning": "Sell supertrend: SuperTrend bearish"
         },
         {
-          "symbol": "VIRTUAL",
+          "symbol": "SUPER",
           "action": "strong_buy",
+          "reasoning": "Strong supertrend: SuperTrend bullish"
+        },
+        {
+          "symbol": "RIO",
+          "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
@@ -121,8 +121,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2025-12-01T04:52:31.033269",
-    "analysis_duration": 16.961604118347168,
+    "generated_at": "2025-12-01T08:34:10.970406",
+    "analysis_duration": 16.0630521774292,
     "total_holdings": 48,
     "successful_analyses": 41,
     "data_completeness": 0.8541666666666666,
