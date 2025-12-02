@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-12-02T12:46:03.000154",
+  "generated_at": "2025-12-02T16:31:22.739728",
   "summary": {
     "total_analyzed": 41,
     "market_sentiment": {
       "bullish": 2,
-      "bearish": 3,
-      "neutral": 36
+      "bearish": 2,
+      "neutral": 37
     },
     "risk_distribution": {
       "medium": 2,
@@ -17,51 +17,51 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.6007345013131653,
+      "risk_score": 0.5333156644704768,
       "diversification_score": 0.5,
-      "momentum_score": 0.17365194452194493,
-      "overall_score": 0.3576391477362599
+      "momentum_score": 0.22222692715929554,
+      "overall_score": 0.39630375422960623
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "sell",
+        "action": "strong_buy",
         "confidence": 1.0,
-        "urgency": 9,
-        "target_allocation": 0,
-        "expected_roi": 0.05,
+        "urgency": 8,
+        "target_allocation": 0.15,
+        "expected_roi": 0.09548570414646117,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Sell macd: MACD bearish crossover"
+          "Strong macd: MACD bullish crossover"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "ETH",
-        "action": "buy",
+        "action": "strong_buy",
         "confidence": 1.0,
-        "urgency": 6,
-        "target_allocation": 0.12,
-        "expected_roi": 0.09412181494638155,
+        "urgency": 8,
+        "target_allocation": 0.15,
+        "expected_roi": 0.09366733258155485,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Sell macd: MACD bearish crossover"
+          "Strong macd: MACD bullish crossover"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "SOL",
-        "action": "reduce",
+        "action": "strong_buy",
         "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.04,
-        "expected_roi": 0.05,
+        "urgency": 8,
+        "target_allocation": 0.15,
+        "expected_roi": 0.0927098584301016,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Sell supertrend: SuperTrend bearish"
+          "Strong macd: MACD bullish crossover"
         ],
         "risk_level": "conservative"
       },
@@ -74,8 +74,8 @@
         "expected_roi": 0.05,
         "reasoning": [
           "Sell supertrend: SuperTrend bearish",
-          "Sell supertrend: SuperTrend bearish",
-          "Sell supertrend: SuperTrend bearish"
+          "Strong supertrend: SuperTrend bullish",
+          "Sell rsi_14: Overbought RSI: 80.7"
         ],
         "risk_level": "moderate"
       },
@@ -88,8 +88,8 @@
         "expected_roi": 0.05,
         "reasoning": [
           "Sell supertrend: SuperTrend bearish",
-          "Sell supertrend: SuperTrend bearish",
-          "Sell supertrend: SuperTrend bearish"
+          "Strong supertrend: SuperTrend bullish",
+          "Sell rsi_14: Overbought RSI: 78.7"
         ],
         "risk_level": "moderate"
       }
@@ -102,18 +102,18 @@
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "MAV",
+          "symbol": "SYRUP",
+          "action": "stop_loss",
+          "reasoning": "Strong supertrend: SuperTrend bullish"
+        },
+        {
+          "symbol": "CRV",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
         },
         {
-          "symbol": "MOG",
-          "action": "sell",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
-        {
-          "symbol": "SPK",
-          "action": "stop_loss",
+          "symbol": "ZK",
+          "action": "strong_buy",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
@@ -121,8 +121,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2025-12-02T12:46:02.998386",
-    "analysis_duration": 16.16378903388977,
+    "generated_at": "2025-12-02T16:31:22.737799",
+    "analysis_duration": 16.898422241210938,
     "total_holdings": 48,
     "successful_analyses": 41,
     "data_completeness": 0.8541666666666666,
