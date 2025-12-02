@@ -1,26 +1,26 @@
 {
-  "generated_at": "2025-12-01T20:22:47.658026",
+  "generated_at": "2025-12-02T01:42:59.110530",
   "summary": {
     "total_analyzed": 41,
     "market_sentiment": {
       "bullish": 2,
-      "bearish": 2,
-      "neutral": 37
+      "bearish": 3,
+      "neutral": 36
     },
     "risk_distribution": {
       "medium": 2,
       "high": 6,
       "very_high": 33
     },
-    "data_quality_average": 0.8706341463414634
+    "data_quality_average": 0.8711707317073172
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.7481326332815239,
+      "risk_score": 0.6290634860964932,
       "diversification_score": 0.5,
-      "momentum_score": 0.17457724788955242,
-      "overall_score": 0.3088148715360095
+      "momentum_score": 0.17054252848596374,
+      "overall_score": 0.3471596807964901
     },
     "top_recommendations": [
       {
@@ -39,11 +39,11 @@
       },
       {
         "symbol": "ETH",
-        "action": "sell",
+        "action": "buy",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0,
-        "expected_roi": 0.05,
+        "urgency": 6,
+        "target_allocation": 0.12,
+        "expected_roi": 0.09382263916408622,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -55,7 +55,7 @@
         "symbol": "SOL",
         "action": "sell",
         "confidence": 1.0,
-        "urgency": 9,
+        "urgency": 7,
         "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
@@ -95,12 +95,17 @@
       }
     ],
     "executive_summary": {
-      "overall_health": "risky",
+      "overall_health": "good",
       "immediate_actions_needed": 34,
       "profit_opportunities": 5,
       "risk_alerts": 3,
       "portfolio_balance": "balanced",
       "key_recommendations": [
+        {
+          "symbol": "MAV",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
         {
           "symbol": "MOG",
           "action": "sell",
@@ -110,19 +115,14 @@
           "symbol": "VIRTUAL",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
-        {
-          "symbol": "SUPER",
-          "action": "strong_buy",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2025-12-01T20:22:47.656252",
-    "analysis_duration": 16.628238916397095,
+    "generated_at": "2025-12-02T01:42:59.109348",
+    "analysis_duration": 17.920527458190918,
     "total_holdings": 48,
     "successful_analyses": 41,
     "data_completeness": 0.8541666666666666,
