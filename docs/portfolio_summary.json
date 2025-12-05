@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-12-05T16:29:39.845020",
+  "generated_at": "2025-12-05T20:25:22.613601",
   "summary": {
     "total_analyzed": 41,
     "market_sentiment": {
       "bullish": 2,
-      "bearish": 1,
-      "neutral": 38
+      "bearish": 2,
+      "neutral": 37
     },
     "risk_distribution": {
       "medium": 2,
@@ -17,19 +17,19 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.5285063835368664,
+      "risk_score": 0.5754272447954014,
       "diversification_score": 0.5,
-      "momentum_score": 0.25344772713292496,
-      "overall_score": 0.40831378119868617
+      "momentum_score": 0.24401228798614344,
+      "overall_score": 0.38952834773024736
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "strong_buy",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09557753630030455,
+        "urgency": 7,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -43,7 +43,7 @@
         "confidence": 1.0,
         "urgency": 9,
         "target_allocation": 0.15,
-        "expected_roi": 0.0936718683126845,
+        "expected_roi": 0.09342482780710344,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -57,7 +57,7 @@
         "confidence": 1.0,
         "urgency": 8,
         "target_allocation": 0.15,
-        "expected_roi": 0.09281304872065346,
+        "expected_roi": 0.09264058024174748,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -67,29 +67,29 @@
       },
       {
         "symbol": "BONK",
-        "action": "buy",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.07500000000000001,
-        "expected_roi": 0.0907678951121656,
+        "urgency": 7,
+        "target_allocation": 0.025,
+        "expected_roi": 0.05,
         "reasoning": [
           "Sell supertrend: SuperTrend bearish",
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.02)",
+          "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "moderate"
       },
       {
         "symbol": "PEPE",
-        "action": "accumulate",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0.05,
-        "expected_roi": 0.0,
+        "urgency": 9,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
         "reasoning": [
           "Sell supertrend: SuperTrend bearish",
           "Strong supertrend: SuperTrend bullish",
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.03)"
+          "Sell supertrend: SuperTrend bearish"
         ],
         "risk_level": "moderate"
       }
@@ -102,11 +102,6 @@
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "SEI",
-          "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
-        {
           "symbol": "SYRUP",
           "action": "strong_buy",
           "reasoning": "Strong supertrend: SuperTrend bullish"
@@ -115,14 +110,19 @@
           "symbol": "RAY",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
+        {
+          "symbol": "REZ",
+          "action": "stop_loss",
+          "reasoning": "Strong bollinger_bands: Price at lower Bollinger Band (-0.01)"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2025-12-05T16:29:39.843218",
-    "analysis_duration": 17.29526114463806,
+    "generated_at": "2025-12-05T20:25:22.612528",
+    "analysis_duration": 16.56006097793579,
     "total_holdings": 48,
     "successful_analyses": 41,
     "data_completeness": 0.8541666666666666,
