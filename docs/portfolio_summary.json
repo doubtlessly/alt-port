@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-12-15T12:50:22.019067",
+  "generated_at": "2025-12-15T16:33:22.610416",
   "summary": {
     "total_analyzed": 41,
     "market_sentiment": {
       "bullish": 2,
-      "bearish": 5,
-      "neutral": 34
+      "bearish": 10,
+      "neutral": 29
     },
     "risk_distribution": {
       "medium": 2,
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.47861730171619254,
+      "risk_score": 0.47642142596033316,
       "diversification_score": 0.5,
-      "momentum_score": 0.28676417107109164,
-      "overall_score": 0.436048956451633
+      "momentum_score": 0.2575187499567536,
+      "overall_score": 0.4270324413321401
     },
     "top_recommendations": [
       {
@@ -29,11 +29,11 @@
         "confidence": 1.0,
         "urgency": 10,
         "target_allocation": 0.15,
-        "expected_roi": 0.09651306297804359,
+        "expected_roi": 0.09604485047850207,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Strong macd: MACD bullish crossover"
+          "Sell macd: MACD bearish crossover"
         ],
         "risk_level": "conservative"
       },
@@ -43,11 +43,11 @@
         "confidence": 1.0,
         "urgency": 9,
         "target_allocation": 0.15,
-        "expected_roi": 0.09476809308513265,
+        "expected_roi": 0.09396963772618307,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Strong macd: MACD bullish crossover"
+          "Sell macd: MACD bearish crossover"
         ],
         "risk_level": "conservative"
       },
@@ -57,25 +57,25 @@
         "confidence": 1.0,
         "urgency": 8,
         "target_allocation": 0.15,
-        "expected_roi": 0.0941468566844248,
+        "expected_roi": 0.09312520232053412,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish"
+          "Sell macd: MACD bearish crossover"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "BONK",
-        "action": "sell",
+        "action": "stop_loss",
         "confidence": 1.0,
-        "urgency": 9,
+        "urgency": 10,
         "target_allocation": 0,
-        "expected_roi": 0.05,
+        "expected_roi": 0.0,
         "reasoning": [
           "Sell supertrend: SuperTrend bearish",
-          "Strong supertrend: SuperTrend bullish",
-          "Sell supertrend: SuperTrend bearish"
+          "Strong bollinger_bands: Price at lower Bollinger Band (0.02)",
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "moderate"
       },
@@ -91,7 +91,7 @@
           "Strong supertrend: SuperTrend bullish",
           "Sell supertrend: SuperTrend bearish"
         ],
-        "risk_level": "conservative"
+        "risk_level": "moderate"
       }
     ],
     "executive_summary": {
@@ -107,22 +107,22 @@
           "reasoning": "Strong macd: MACD bullish crossover"
         },
         {
-          "symbol": "SEI",
+          "symbol": "BONK",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
         },
         {
-          "symbol": "SYRUP",
+          "symbol": "SEI",
           "action": "strong_buy",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
+          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2025-12-15T12:50:22.017299",
-    "analysis_duration": 17.56388211250305,
+    "generated_at": "2025-12-15T16:33:22.608709",
+    "analysis_duration": 16.560046434402466,
     "total_holdings": 48,
     "successful_analyses": 41,
     "data_completeness": 0.8541666666666666,
