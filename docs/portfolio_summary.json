@@ -1,26 +1,27 @@
 {
-  "generated_at": "2025-12-18T20:23:12.848294",
+  "generated_at": "2025-12-19T01:45:25.163641",
   "summary": {
-    "total_analyzed": 41,
+    "total_analyzed": 42,
     "market_sentiment": {
       "bullish": 0,
       "bearish": 20,
-      "neutral": 21
+      "neutral": 22
     },
     "risk_distribution": {
       "medium": 2,
       "high": 6,
-      "very_high": 33
+      "very_high": 33,
+      "unknown": 1
     },
-    "data_quality_average": 0.8797560975609756
+    "data_quality_average": 0.8593333333333333
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.6995672481870729,
+      "risk_score": 0.6172405968448962,
       "diversification_score": 0.5,
-      "momentum_score": 0.15608926359270642,
-      "overall_score": 0.31884067180187786
+      "momentum_score": 0.14589399770211592,
+      "overall_score": 0.34288446695240654
     },
     "top_recommendations": [
       {
@@ -53,17 +54,17 @@
       },
       {
         "symbol": "SOL",
-        "action": "reduce",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0.025,
+        "urgency": 9,
+        "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.01)",
-          "Strong supertrend: SuperTrend bullish"
+          "Strong supertrend: SuperTrend bullish",
+          "Sell macd: MACD bearish crossover"
         ],
-        "risk_level": "moderate"
+        "risk_level": "conservative"
       },
       {
         "symbol": "BONK",
@@ -71,9 +72,9 @@
         "confidence": 1.0,
         "urgency": 8,
         "target_allocation": 0.07500000000000001,
-        "expected_roi": 0.0885966594439935,
+        "expected_roi": 0.08916725498001797,
         "reasoning": [
-          "Strong bollinger_bands: Price at lower Bollinger Band (-0.03)",
+          "Strong bollinger_bands: Price at lower Bollinger Band (0.05)",
           "Sell supertrend: SuperTrend bearish",
           "Strong supertrend: SuperTrend bullish"
         ],
@@ -96,16 +97,11 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 34,
+      "immediate_actions_needed": 36,
       "profit_opportunities": 5,
-      "risk_alerts": 2,
+      "risk_alerts": 3,
       "portfolio_balance": "balanced",
       "key_recommendations": [
-        {
-          "symbol": "XRP",
-          "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
         {
           "symbol": "SEI",
           "action": "stop_loss",
@@ -115,17 +111,22 @@
           "symbol": "SYRUP",
           "action": "strong_buy",
           "reasoning": "Strong supertrend: SuperTrend bullish"
+        },
+        {
+          "symbol": "HBAR",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2025-12-18T20:23:12.847410",
-    "analysis_duration": 17.889431476593018,
+    "generated_at": "2025-12-19T01:45:25.161740",
+    "analysis_duration": 16.582563877105713,
     "total_holdings": 48,
-    "successful_analyses": 41,
-    "data_completeness": 0.8541666666666666,
+    "successful_analyses": 42,
+    "data_completeness": 0.875,
     "timeframes": [
       "1d",
       "4h",
