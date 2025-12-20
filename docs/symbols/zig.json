@@ -1,13 +1,13 @@
 {
   "symbol": "ZIG",
-  "generated_at": "2025-12-20T12:40:44.684799",
+  "generated_at": "2025-12-20T16:26:22.765262",
   "analysis": {
     "symbol": "ZIG",
     "timeframes": {
       "4h": {
         "symbol": "ZIG",
         "timeframe": "4h",
-        "timestamp": "2025-12-20T12:40:44.613004",
+        "timestamp": "2025-12-20T16:26:22.682405",
         "data_quality": 0.0,
         "indicators": {},
         "signals": [],
@@ -30,24 +30,112 @@
       "1h": {
         "symbol": "ZIG",
         "timeframe": "1h",
-        "timestamp": "2025-12-20T12:40:44.613052",
-        "data_quality": 0.0,
-        "indicators": {},
-        "signals": [],
-        "trend_analysis": {
-          "direction": "TrendDirection.NEUTRAL",
-          "strength": 0,
-          "confidence": 0
+        "timestamp": "2025-12-20T16:26:22.682496",
+        "data_quality": 0.102,
+        "indicators": {
+          "sma_20": 0.063725,
+          "sma_50": 0.06269559999999999,
+          "ema_12": 0.06328834249836288,
+          "ema_26": 0.06330299122514961,
+          "ema_50": 0.06268907843137254,
+          "ichimoku_tenkan_sen": 0.063955,
+          "ichimoku_kijun_sen": 0.06514,
+          "supertrend": 0.0677040422050746,
+          "supertrend_direction": "-1",
+          "rsi_14": 46.02676204395386,
+          "rsi_7": 41.225002594216036,
+          "macd": -2.800273851756574e-05,
+          "macd_signal": 0.00023926323012975003,
+          "macd_histogram": -0.00026726596864731577,
+          "stoch_k": 11.761973266199227,
+          "stoch_d": 14.470452290089147,
+          "williams_r": -86.26865671641781,
+          "bb_upper": 0.06607777691473843,
+          "bb_middle": 0.063725,
+          "bb_lower": 0.06137222308526157,
+          "bb_width": 7.384156656691811,
+          "bb_position": 0.29067288661545193,
+          "atr": 0.00199455922143115,
+          "atr_percentage": 3.1790870599795182,
+          "volume_sma": 7541357.634999996,
+          "volume_ratio": 0.43316715081103585,
+          "vwap": 0.06281011490171316,
+          "vwap_distance": -0.11162995295085218,
+          "obv": -18637594.7,
+          "mfi": 28.413037808778686,
+          "current_price": 0.06274,
+          "price_change_24h": -2.4412999533509594,
+          "price_change_7d": 0
         },
-        "support_resistance": {},
-        "volume_analysis": {},
+        "signals": [
+          "TechnicalSignal(indicator='macd', signal_type='sell', strength=<SignalStrength.MODERATE: 3>, confidence=np.float64(0.0005345319372946315), timeframe='1h', price_target=np.float64(0.05772080000000001), stop_loss=np.float64(0.0652496), risk_reward_ratio=2.0, reasoning='MACD bearish crossover', timestamp='2025-12-20T16:26:22.684926')",
+          "TechnicalSignal(indicator='supertrend', signal_type='sell', strength=<SignalStrength.STRONG: 4>, confidence=0.8, timeframe='1h', price_target=np.float64(0.0552112), stop_loss=np.float64(0.0677040422050746), risk_reward_ratio=3.0, reasoning='SuperTrend bearish', timestamp='2025-12-20T16:26:22.684926')"
+        ],
+        "trend_analysis": {
+          "direction": "TrendDirection.BEARISH",
+          "strength": 0.45,
+          "confidence": 0.9,
+          "key_levels": {
+            "sma_20": 0.063725,
+            "sma_50": 0.06269559999999999
+          },
+          "trend_factors": [
+            "SuperTrend bearish",
+            "MACD below signal line"
+          ]
+        },
+        "support_resistance": {
+          "immediate_support": 0.06228,
+          "immediate_resistance": 0.06669,
+          "strong_support": 0.05797,
+          "strong_resistance": 0.111,
+          "pivot_levels": {
+            "pivot_point": 0.06274666666666667,
+            "resistance_1": 0.06321333333333334,
+            "support_1": 0.06230333333333335,
+            "resistance_2": 0.06365666666666667,
+            "support_2": 0.06183666666666668
+          }
+        },
+        "volume_analysis": {
+          "trend": "neutral",
+          "strength": 0.5,
+          "patterns": [],
+          "volume_price_trend": "bearish_divergence"
+        },
         "risk_metrics": {
-          "risk_level": "unknown"
+          "volatility_score": 0.40716332357968615,
+          "risk_level": "medium",
+          "sharpe_estimate": 0.32613581830538485,
+          "max_drawdown_estimate": -7.798909037299101,
+          "risk_factors": []
         },
         "ai_summary": {
-          "recommendation": "HOLD",
-          "confidence": 0,
-          "risk_level": "unknown"
+          "recommendation": "SELL",
+          "confidence": 0.6666666666666666,
+          "risk_level": "medium",
+          "trend_direction": "BEARISH",
+          "trend_strength": 0.45,
+          "signal_count": {
+            "buy": 0,
+            "sell": 2,
+            "warning": 0
+          },
+          "key_insights": [],
+          "action_priority": 6,
+          "optimal_entry": {
+            "aggressive_entry": 0.06274,
+            "conservative_entry": 0.06228,
+            "breakout_entry": 0.06669
+          },
+          "risk_management": {
+            "position_size": 0.1,
+            "stop_loss": 0.06228,
+            "take_profit_1": 0.0677592,
+            "take_profit_2": 0.07215099999999999,
+            "max_risk_per_trade": 0.02,
+            "hold_period_days": 14
+          }
         }
       }
     },
@@ -61,18 +149,19 @@
       "trend_direction": "NEUTRAL",
       "key_insights": []
     },
-    "last_updated": "2025-12-20T12:40:44.612935"
+    "last_updated": "2025-12-20T16:26:22.682329"
   },
   "ai_recommendation": {
     "symbol": "ZIG",
-    "action": "accumulate",
-    "confidence": 0.1,
-    "urgency": 1,
-    "target_allocation": 0.05,
-    "expected_roi": 0.0,
+    "action": "reduce",
+    "confidence": 0.42016035958118836,
+    "urgency": 2,
+    "target_allocation": 0.04,
+    "expected_roi": 0.05,
     "reasoning": [
+      "Sell supertrend: SuperTrend bearish",
       "Underweight position (0.0%) - consider accumulating"
     ],
-    "risk_level": "moderate"
+    "risk_level": "conservative"
   }
 }
