@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-02-13T13:02:36.862677",
+  "generated_at": "2026-02-13T16:50:03.362015",
   "summary": {
     "total_analyzed": 42,
     "market_sentiment": {
       "bullish": 0,
-      "bearish": 13,
-      "neutral": 29
+      "bearish": 10,
+      "neutral": 32
     },
     "risk_distribution": {
       "medium": 2,
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.47577436189036065,
+      "risk_score": 0.4615597367520919,
       "diversification_score": 0.5,
       "momentum_score": 0,
-      "overall_score": 0.3414085460365464
+      "overall_score": 0.34614675441596937
     },
     "top_recommendations": [
       {
@@ -49,7 +49,7 @@
           "Strong supertrend: SuperTrend bullish",
           "Strong macd: MACD bullish crossover"
         ],
-        "risk_level": "conservative"
+        "risk_level": "moderate"
       },
       {
         "symbol": "SOL",
@@ -61,7 +61,7 @@
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Sell supertrend: SuperTrend bearish"
+          "Strong macd: MACD bullish crossover"
         ],
         "risk_level": "moderate"
       },
@@ -75,54 +75,54 @@
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Sell supertrend: SuperTrend bearish",
-          "Sell supertrend: SuperTrend bearish"
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.10)"
         ],
         "risk_level": "moderate"
       },
       {
         "symbol": "PEPE",
-        "action": "strong_buy",
+        "action": "stop_loss",
         "confidence": 1.0,
         "urgency": 10,
-        "target_allocation": 0.1,
-        "expected_roi": 0.0908218493131319,
+        "target_allocation": 0,
+        "expected_roi": 0.0,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish"
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.09)"
         ],
         "risk_level": "moderate"
       }
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 42,
+      "immediate_actions_needed": 41,
       "profit_opportunities": 5,
       "risk_alerts": 4,
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
           "symbol": "PEPE",
+          "action": "stop_loss",
+          "reasoning": "Strong supertrend: SuperTrend bullish"
+        },
+        {
+          "symbol": "STO",
+          "action": "stop_loss",
+          "reasoning": "Strong supertrend: SuperTrend bullish"
+        },
+        {
+          "symbol": "SPK",
           "action": "strong_buy",
           "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
-        {
-          "symbol": "SYRUP",
-          "action": "stop_loss",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
-        {
-          "symbol": "HBAR",
-          "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-02-13T13:02:36.861325",
-    "analysis_duration": 16.606738567352295,
+    "generated_at": "2026-02-13T16:50:03.360207",
+    "analysis_duration": 17.720038652420044,
     "total_holdings": 48,
     "successful_analyses": 42,
     "data_completeness": 0.875,
