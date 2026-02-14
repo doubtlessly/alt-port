@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-14T12:52:20.776721",
+  "generated_at": "2026-02-14T16:32:46.273792",
   "summary": {
     "total_analyzed": 42,
     "market_sentiment": {
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.4657456587609574,
+      "risk_score": 0.46107853555752615,
       "diversification_score": 0.5,
-      "momentum_score": 0.010775209615745185,
-      "overall_score": 0.3483431836182626
+      "momentum_score": 0.015511556485745481,
+      "overall_score": 0.3514776736427398
     },
     "top_recommendations": [
       {
@@ -39,11 +39,11 @@
       },
       {
         "symbol": "ETH",
-        "action": "stop_loss",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 10,
+        "urgency": 9,
         "target_allocation": 0,
-        "expected_roi": 0.0,
+        "expected_roi": 0.05,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -81,31 +81,26 @@
       },
       {
         "symbol": "PEPE",
-        "action": "accumulate",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0.05,
-        "expected_roi": 0.0,
+        "urgency": 9,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish",
-          "Sell bollinger_bands: Price at upper Bollinger Band (0.95)"
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.02)",
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "moderate"
       }
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 41,
+      "immediate_actions_needed": 42,
       "profit_opportunities": 5,
       "risk_alerts": 4,
       "portfolio_balance": "balanced",
       "key_recommendations": [
-        {
-          "symbol": "ETH",
-          "action": "stop_loss",
-          "reasoning": "Strong macd: MACD bullish crossover"
-        },
         {
           "symbol": "SYRUP",
           "action": "stop_loss",
@@ -115,14 +110,19 @@
           "symbol": "HBAR",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
+        {
+          "symbol": "STO",
+          "action": "stop_loss",
+          "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-02-14T12:52:20.775490",
-    "analysis_duration": 16.63590669631958,
+    "generated_at": "2026-02-14T16:32:46.272221",
+    "analysis_duration": 15.872726917266846,
     "total_holdings": 48,
     "successful_analyses": 42,
     "data_completeness": 0.875,
