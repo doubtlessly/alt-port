@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-02-14T20:29:14.504395",
+  "generated_at": "2026-02-15T02:24:37.551078",
   "summary": {
     "total_analyzed": 42,
     "market_sentiment": {
-      "bullish": 1,
-      "bearish": 2,
-      "neutral": 39
+      "bullish": 2,
+      "bearish": 0,
+      "neutral": 40
     },
     "risk_distribution": {
       "medium": 2,
       "high": 6,
       "very_high": 34
     },
-    "data_quality_average": 0.9082380952380951
+    "data_quality_average": 0.9085714285714285
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.45901932626309727,
+      "risk_score": 0.4812888696430226,
       "diversification_score": 0.5,
-      "momentum_score": 0.029722466156045513,
-      "overall_score": 0.35690104663098277
+      "momentum_score": 0.034086023607826255,
+      "overall_score": 0.35093238465493454
     },
     "top_recommendations": [
       {
@@ -31,7 +31,7 @@
         "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
-          "Sell macd: MACD bearish crossover",
+          "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
           "Strong macd: MACD bullish crossover"
         ],
@@ -53,15 +53,15 @@
       },
       {
         "symbol": "SOL",
-        "action": "sell",
+        "action": "stop_loss",
         "confidence": 1.0,
-        "urgency": 9,
+        "urgency": 10,
         "target_allocation": 0,
-        "expected_roi": 0.05,
+        "expected_roi": 0.0,
         "reasoning": [
-          "Strong supertrend: SuperTrend bullish",
           "Strong macd: MACD bullish crossover",
-          "Sell supertrend: SuperTrend bearish"
+          "Strong supertrend: SuperTrend bullish",
+          "Strong macd: MACD bullish crossover"
         ],
         "risk_level": "conservative"
       },
@@ -88,8 +88,8 @@
         "expected_roi": 0.05,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
-          "Sell rsi_14: Overbought RSI: 79.7",
-          "Sell bollinger_bands: Price at upper Bollinger Band (1.01)"
+          "Sell rsi_14: Overbought RSI: 81.4",
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "moderate"
       }
@@ -102,6 +102,11 @@
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
+          "symbol": "SOL",
+          "action": "stop_loss",
+          "reasoning": "Strong macd: MACD bullish crossover"
+        },
+        {
           "symbol": "SYRUP",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
@@ -110,19 +115,14 @@
           "symbol": "HBAR",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
-        {
-          "symbol": "STO",
-          "action": "stop_loss",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-02-14T20:29:14.503353",
-    "analysis_duration": 16.22995138168335,
+    "generated_at": "2026-02-15T02:24:37.549433",
+    "analysis_duration": 16.024258852005005,
     "total_holdings": 48,
     "successful_analyses": 42,
     "data_completeness": 0.875,
