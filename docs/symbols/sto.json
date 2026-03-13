@@ -1,63 +1,64 @@
 {
   "symbol": "STO",
-  "generated_at": "2026-03-13T13:01:42.525680",
+  "generated_at": "2026-03-13T16:42:20.765727",
   "analysis": {
     "symbol": "STO",
     "timeframes": {
       "1d": {
         "symbol": "STO",
         "timeframe": "1d",
-        "timestamp": "2026-03-13T13:01:42.318749",
+        "timestamp": "2026-03-13T16:42:20.533961",
         "data_quality": 0.69,
         "indicators": {
-          "sma_20": 0.06113449999999996,
-          "sma_50": 0.06450639999999998,
-          "sma_200": 0.10515085000000003,
-          "ema_12": 0.06265510562611905,
-          "ema_26": 0.06216698661629829,
-          "ema_50": 0.06692619627238132,
+          "sma_20": 0.06128549999999996,
+          "sma_50": 0.06456679999999997,
+          "sma_200": 0.10516595000000002,
+          "ema_12": 0.06311972101073444,
+          "ema_26": 0.06239069032000199,
+          "ema_50": 0.06704462764493034,
           "ichimoku_tenkan_sen": 0.06820000000000001,
           "ichimoku_kijun_sen": 0.06628500000000001,
           "ichimoku_senkou_span_a": 0.0648875,
           "ichimoku_senkou_span_b": 0.103515,
-          "supertrend": 0.05191141771946703,
+          "supertrend": 0.05209141771946702,
           "supertrend_direction": "1",
-          "rsi_14": 59.49882851179926,
-          "rsi_7": 72.08473405166963,
-          "macd": 0.00048811900982075745,
-          "macd_signal": -0.0007028065548951188,
-          "macd_histogram": 0.0011909255647158763,
-          "stoch_k": 49.15469146238373,
-          "stoch_d": 51.98805187575538,
-          "williams_r": -54.60693153000845,
-          "bb_upper": 0.06852214738474105,
-          "bb_middle": 0.06113449999999996,
-          "bb_lower": 0.053746852615258876,
-          "bb_width": 24.16850513127969,
-          "bb_position": 0.9044250956226074,
-          "atr": 0.0054875732404922615,
-          "atr_percentage": 8.17698292429185,
-          "volume_sma": 304433.2450000259,
-          "volume_ratio": 0.4314259436415652,
-          "vwap": 0.0893892986605366,
-          "vwap_distance": -24.9238991628563,
-          "obv": 691614592.7700149,
-          "mfi": 80.1853450615415,
-          "current_price": 0.06711,
-          "price_change_24h": 25.603593486805178,
-          "price_change_7d": -24.37457741717376
+          "rsi_14": 63.50840205376556,
+          "rsi_7": 77.6200055970936,
+          "macd": 0.0007290306907324559,
+          "macd_signal": -0.0006546242187127791,
+          "macd_histogram": 0.001383654909445235,
+          "stoch_k": 53.40941110171874,
+          "stoch_d": 53.406291755533715,
+          "williams_r": -41.84277261200341,
+          "bb_upper": 0.06961015217779526,
+          "bb_middle": 0.06128549999999996,
+          "bb_lower": 0.05296084782220466,
+          "bb_width": 27.16679207249776,
+          "bb_position": 1.0312233959510855,
+          "atr": 0.005551858954777976,
+          "atr_percentage": 7.916524960470521,
+          "volume_sma": 307698.38000002585,
+          "volume_ratio": 0.6390774628062178,
+          "vwap": 0.08938887997044755,
+          "vwap_distance": -21.545051215335327,
+          "obv": 691679895.4700149,
+          "mfi": 78.48020472669391,
+          "current_price": 0.07013,
+          "price_change_24h": 31.25584877409695,
+          "price_change_7d": -20.971377056569757
         },
         "signals": [
-          "TechnicalSignal(indicator='macd', signal_type='buy', strength=<SignalStrength.MODERATE: 3>, confidence=np.float64(0.0023818511294317526), timeframe='1d', price_target=np.float64(0.07247880000000001), stop_loss=np.float64(0.0644256), risk_reward_ratio=2.0, reasoning='MACD bullish crossover', timestamp='2026-03-13T13:01:42.321034')",
-          "TechnicalSignal(indicator='supertrend', signal_type='buy', strength=<SignalStrength.STRONG: 4>, confidence=0.8, timeframe='1d', price_target=np.float64(0.07516320000000001), stop_loss=np.float64(0.05191141771946703), risk_reward_ratio=3.0, reasoning='SuperTrend bullish', timestamp='2026-03-13T13:01:42.321034')"
+          "TechnicalSignal(indicator='macd', signal_type='buy', strength=<SignalStrength.MODERATE: 3>, confidence=np.float64(0.00276730981889047), timeframe='1d', price_target=np.float64(0.0757404), stop_loss=np.float64(0.06732479999999999), risk_reward_ratio=2.0, reasoning='MACD bullish crossover', timestamp='2026-03-13T16:42:20.536609')",
+          "TechnicalSignal(indicator='bollinger_bands', signal_type='sell', strength=<SignalStrength.STRONG: 4>, confidence=1.0, timeframe='1d', price_target=np.float64(0.06128549999999996), stop_loss=np.float64(0.0715326), risk_reward_ratio=2.5, reasoning='Price at upper Bollinger Band (1.03)', timestamp='2026-03-13T16:42:20.536609')",
+          "TechnicalSignal(indicator='supertrend', signal_type='buy', strength=<SignalStrength.STRONG: 4>, confidence=0.8, timeframe='1d', price_target=np.float64(0.07854560000000001), stop_loss=np.float64(0.05209141771946702), risk_reward_ratio=3.0, reasoning='SuperTrend bullish', timestamp='2026-03-13T16:42:20.536609')"
         ],
         "trend_analysis": {
           "direction": "TrendDirection.BULLISH",
           "strength": 0.45,
           "confidence": 0.9,
           "key_levels": {
-            "sma_20": 0.06113449999999996,
-            "sma_50": 0.06450639999999998
+            "sma_20": 0.06128549999999996,
+            "sma_50": 0.06456679999999997
           },
           "trend_factors": [
             "SuperTrend bullish",
@@ -84,13 +85,13 @@
           "volume_price_trend": "bullish_divergence"
         },
         "risk_metrics": {
-          "volatility_score": 1.6044842603476837,
+          "volatility_score": 1.605515477978575,
           "risk_level": "very_high",
-          "sharpe_estimate": 0.6696154202754981,
+          "sharpe_estimate": 0.6993522761428894,
           "max_drawdown_estimate": -73.7707390648567,
           "risk_factors": [
-            "High volatility: 160.4%",
-            "High ATR: 8.2%"
+            "High volatility: 160.6%",
+            "High ATR: 7.9%"
           ]
         },
         "ai_summary": {
@@ -101,23 +102,23 @@
           "trend_strength": 0.45,
           "signal_count": {
             "buy": 2,
-            "sell": 0,
+            "sell": 1,
             "warning": 0
           },
           "key_insights": [
-            "24h price change: +25.6%"
+            "24h price change: +31.3%"
           ],
-          "action_priority": 8,
+          "action_priority": 10,
           "optimal_entry": {
-            "aggressive_entry": 0.06711,
+            "aggressive_entry": 0.07013,
             "conservative_entry": 0.05437,
             "breakout_entry": 0.08003
           },
           "risk_management": {
             "position_size": 0.1,
-            "stop_loss": 0.056134853519015475,
-            "take_profit_1": 0.07247880000000001,
-            "take_profit_2": 0.0771765,
+            "stop_loss": 0.05902628209044404,
+            "take_profit_1": 0.0757404,
+            "take_profit_2": 0.08064949999999999,
             "max_risk_per_trade": 0.02,
             "hold_period_days": 14
           }
@@ -126,57 +127,57 @@
       "4h": {
         "symbol": "STO",
         "timeframe": "4h",
-        "timestamp": "2026-03-13T13:01:42.321545",
+        "timestamp": "2026-03-13T16:42:20.537031",
         "data_quality": 1.0,
         "indicators": {
-          "sma_20": 0.06526000000000001,
-          "sma_50": 0.062158600000000154,
-          "sma_200": 0.05854980000000005,
-          "ema_12": 0.06673439599378264,
-          "ema_26": 0.06509797786752389,
-          "ema_50": 0.06344866486468687,
-          "ichimoku_tenkan_sen": 0.071515,
+          "sma_20": 0.06563500000000001,
+          "sma_50": 0.06234380000000015,
+          "sma_200": 0.05861665000000005,
+          "ema_12": 0.06735442974621844,
+          "ema_26": 0.0655221605769254,
+          "ema_50": 0.06373893637298794,
+          "ichimoku_tenkan_sen": 0.07032,
           "ichimoku_kijun_sen": 0.07052,
-          "ichimoku_senkou_span_a": 0.0605425,
+          "ichimoku_senkou_span_a": 0.061045,
           "ichimoku_senkou_span_b": 0.061085,
-          "supertrend": 0.05862500339260587,
+          "supertrend": 0.06063410305334528,
           "supertrend_direction": "1",
-          "rsi_14": 54.802721593561046,
-          "rsi_7": 52.31297949989635,
-          "macd": 0.001636418126258754,
-          "macd_signal": 0.0016339492790359547,
-          "macd_histogram": 2.4688472227993394e-06,
-          "stoch_k": 32.275550345008256,
-          "stoch_d": 34.33921697327859,
-          "williams_r": -69.31330472103004,
-          "bb_upper": 0.07464031954342944,
-          "bb_middle": 0.06526000000000001,
-          "bb_lower": 0.05587968045657059,
-          "bb_width": 28.747531545906902,
-          "bb_position": 0.598610713176389,
-          "atr": 0.002699058467871504,
-          "atr_percentage": 4.021842449517962,
-          "volume_sma": 77538.46999999986,
-          "volume_ratio": 0.023879759298835835,
-          "vwap": 0.08745064415270236,
-          "vwap_distance": -23.25957041229387,
-          "obv": -10892122.499999998,
-          "mfi": 57.84491319306905,
-          "current_price": 0.06711,
-          "price_change_24h": 7.824550128534715,
-          "price_change_7d": 23.069869796442326
+          "rsi_14": 60.185745689909666,
+          "rsi_7": 62.401779204808406,
+          "macd": 0.0018322691692930354,
+          "macd_signal": 0.0016831859066600199,
+          "macd_histogram": 0.00014908326263301554,
+          "stoch_k": 36.98140200286116,
+          "stoch_d": 35.449108798359426,
+          "williams_r": -53.11158798283264,
+          "bb_upper": 0.07537163557746844,
+          "bb_middle": 0.06563500000000001,
+          "bb_lower": 0.055898364422531585,
+          "bb_width": 29.669035049800947,
+          "bb_position": 0.7308292204343088,
+          "atr": 0.0027869828630235384,
+          "atr_percentage": 3.9740237601932673,
+          "volume_sma": 80203.66999999985,
+          "volume_ratio": 0.47128516687578104,
+          "vwap": 0.08743510208890048,
+          "vwap_distance": -19.791939021590387,
+          "obv": -10793401.999999996,
+          "mfi": 59.249514477012674,
+          "current_price": 0.07013,
+          "price_change_24h": 10.527974783293919,
+          "price_change_7d": 26.47430117222723
         },
         "signals": [
-          "TechnicalSignal(indicator='macd', signal_type='buy', strength=<SignalStrength.MODERATE: 3>, confidence=np.float64(4.937694445598679e-06), timeframe='4h', price_target=np.float64(0.07247880000000001), stop_loss=np.float64(0.0644256), risk_reward_ratio=2.0, reasoning='MACD bullish crossover', timestamp='2026-03-13T13:01:42.324148')",
-          "TechnicalSignal(indicator='supertrend', signal_type='buy', strength=<SignalStrength.STRONG: 4>, confidence=0.8, timeframe='4h', price_target=np.float64(0.07516320000000001), stop_loss=np.float64(0.05862500339260587), risk_reward_ratio=3.0, reasoning='SuperTrend bullish', timestamp='2026-03-13T13:01:42.324148')"
+          "TechnicalSignal(indicator='macd', signal_type='buy', strength=<SignalStrength.MODERATE: 3>, confidence=np.float64(0.0002981665252660311), timeframe='4h', price_target=np.float64(0.0757404), stop_loss=np.float64(0.06732479999999999), risk_reward_ratio=2.0, reasoning='MACD bullish crossover', timestamp='2026-03-13T16:42:20.539797')",
+          "TechnicalSignal(indicator='supertrend', signal_type='buy', strength=<SignalStrength.STRONG: 4>, confidence=0.8, timeframe='4h', price_target=np.float64(0.07854560000000001), stop_loss=np.float64(0.06063410305334528), risk_reward_ratio=3.0, reasoning='SuperTrend bullish', timestamp='2026-03-13T16:42:20.539797')"
         ],
         "trend_analysis": {
           "direction": "TrendDirection.BULLISH",
           "strength": 0.75,
           "confidence": 1.0,
           "key_levels": {
-            "sma_20": 0.06526000000000001,
-            "sma_50": 0.062158600000000154
+            "sma_20": 0.06563500000000001,
+            "sma_50": 0.06234380000000015
           },
           "trend_factors": [
             "Price above both MA20 and MA50",
@@ -190,11 +191,11 @@
           "strong_support": 0.05637,
           "strong_resistance": 0.08003,
           "pivot_levels": {
-            "pivot_point": 0.06716666666666667,
-            "resistance_1": 0.06766333333333334,
-            "support_1": 0.06636333333333333,
-            "resistance_2": 0.06846666666666668,
-            "support_2": 0.06586666666666666
+            "pivot_point": 0.06783333333333333,
+            "resistance_1": 0.06855666666666665,
+            "support_1": 0.06713666666666666,
+            "resistance_2": 0.06925333333333332,
+            "support_2": 0.06641333333333334
           }
         },
         "volume_analysis": {
@@ -203,13 +204,13 @@
           "patterns": [
             "Volume increasing"
           ],
-          "volume_price_trend": "bullish_confirmation"
+          "volume_price_trend": "bearish_confirmation"
         },
         "risk_metrics": {
-          "volatility_score": 0.6585643411387566,
+          "volatility_score": 0.6592751411959525,
           "risk_level": "medium",
-          "sharpe_estimate": -0.34130980614469203,
-          "max_drawdown_estimate": -61.798332964520206,
+          "sharpe_estimate": -0.2797496095217621,
+          "max_drawdown_estimate": -61.7983329645202,
           "risk_factors": []
         },
         "ai_summary": {
@@ -224,19 +225,20 @@
             "warning": 0
           },
           "key_insights": [
-            "Strong bullish trend"
+            "Strong bullish trend",
+            "24h price change: +10.5%"
           ],
           "action_priority": 6,
           "optimal_entry": {
-            "aggressive_entry": 0.06711,
+            "aggressive_entry": 0.07013,
             "conservative_entry": 0.06101,
             "breakout_entry": 0.08003
           },
           "risk_management": {
             "position_size": 0.1,
-            "stop_loss": 0.06171188306425699,
-            "take_profit_1": 0.07247880000000001,
-            "take_profit_2": 0.0771765,
+            "stop_loss": 0.06455603427395291,
+            "take_profit_1": 0.0757404,
+            "take_profit_2": 0.08064949999999999,
             "max_risk_per_trade": 0.02,
             "hold_period_days": 14
           }
@@ -245,114 +247,118 @@
       "1h": {
         "symbol": "STO",
         "timeframe": "1h",
-        "timestamp": "2026-03-13T13:01:42.324543",
+        "timestamp": "2026-03-13T16:42:20.540205",
         "data_quality": 0.9,
         "indicators": {
-          "sma_20": 0.06719900000000004,
-          "sma_50": 0.0659998,
-          "sma_200": 0.06186834999999994,
-          "ema_12": 0.06746264438167889,
-          "ema_26": 0.06713697247271333,
-          "ema_50": 0.06620328548602498,
-          "ichimoku_tenkan_sen": 0.06825999999999999,
-          "ichimoku_kijun_sen": 0.067285,
+          "sma_20": 0.06763950000000003,
+          "sma_50": 0.0665174,
+          "sma_200": 0.06199799999999996,
+          "ema_12": 0.06794487015133086,
+          "ema_26": 0.06746076131151652,
+          "ema_50": 0.06651656432789484,
+          "ichimoku_tenkan_sen": 0.06871,
+          "ichimoku_kijun_sen": 0.06773499999999999,
           "ichimoku_senkou_span_a": 0.0711125,
           "ichimoku_senkou_span_b": 0.07052,
-          "supertrend": 0.07027013990400534,
+          "supertrend": 0.0730500487910179,
           "supertrend_direction": "-1",
-          "rsi_14": 50.044884469633914,
-          "rsi_7": 44.89368517560389,
-          "macd": 0.0003256719089655552,
-          "macd_signal": 0.0005252339077615609,
-          "macd_histogram": -0.00019956199879600566,
-          "stoch_k": 34.41175226862725,
-          "stoch_d": 42.15119263800386,
-          "williams_r": -74.2547425474253,
-          "bb_upper": 0.0703513059646463,
-          "bb_middle": 0.06719900000000004,
-          "bb_lower": 0.06404669403535378,
-          "bb_width": 9.3820026031526,
-          "bb_position": 0.48588334999866983,
-          "atr": 0.001149402030006561,
-          "atr_percentage": 1.7127135002332898,
-          "volume_sma": 9634.74999999996,
-          "volume_ratio": 0.19217935078751475,
-          "vwap": 0.06292083266695597,
-          "vwap_distance": 6.657838358906602,
-          "obv": 557422.8000000005,
-          "mfi": 76.6325799328459,
-          "current_price": 0.06711,
-          "price_change_24h": -2.0720852181526204,
-          "price_change_7d": 13.610970035551052
+          "rsi_14": 62.49961469403081,
+          "rsi_7": 74.66556525403169,
+          "macd": 0.00048410883981434005,
+          "macd_signal": 0.00043003501162530353,
+          "macd_histogram": 5.4073828189036524e-05,
+          "stoch_k": 49.12751264027645,
+          "stoch_d": 37.04202936811658,
+          "williams_r": -15.19607843137244,
+          "bb_upper": 0.0706565292442292,
+          "bb_middle": 0.06763950000000003,
+          "bb_lower": 0.06462247075577086,
+          "bb_width": 8.920909362810688,
+          "bb_position": 0.9127404473728048,
+          "atr": 0.001220857751432146,
+          "atr_percentage": 1.7408494958393643,
+          "volume_sma": 10473.129999999961,
+          "volume_ratio": 3.6091216283957275,
+          "vwap": 0.06298584563686789,
+          "vwap_distance": 11.34247590215789,
+          "obv": 606766.7000000008,
+          "mfi": 73.80845716774269,
+          "current_price": 0.07013,
+          "price_change_24h": 4.4533809949359435,
+          "price_change_7d": 20.31223194372962
         },
         "signals": [
-          "TechnicalSignal(indicator='macd', signal_type='sell', strength=<SignalStrength.MODERATE: 3>, confidence=np.float64(0.0003991239975920113), timeframe='1h', price_target=np.float64(0.0617412), stop_loss=np.float64(0.0697944), risk_reward_ratio=2.0, reasoning='MACD bearish crossover', timestamp='2026-03-13T13:01:42.327062')",
-          "TechnicalSignal(indicator='supertrend', signal_type='sell', strength=<SignalStrength.STRONG: 4>, confidence=0.8, timeframe='1h', price_target=np.float64(0.0590568), stop_loss=np.float64(0.07027013990400534), risk_reward_ratio=3.0, reasoning='SuperTrend bearish', timestamp='2026-03-13T13:01:42.327062')"
+          "TechnicalSignal(indicator='macd', signal_type='buy', strength=<SignalStrength.MODERATE: 3>, confidence=np.float64(0.00010814765637807305), timeframe='1h', price_target=np.float64(0.0757404), stop_loss=np.float64(0.06732479999999999), risk_reward_ratio=2.0, reasoning='MACD bullish crossover', timestamp='2026-03-13T16:42:20.543100')",
+          "TechnicalSignal(indicator='volume', signal_type='warning', strength=<SignalStrength.STRONG: 4>, confidence=np.float64(0.7218243256791455), timeframe='1h', price_target=None, stop_loss=None, risk_reward_ratio=None, reasoning='Volume surge: 3.6x average', timestamp='2026-03-13T16:42:20.543100')",
+          "TechnicalSignal(indicator='supertrend', signal_type='sell', strength=<SignalStrength.STRONG: 4>, confidence=0.8, timeframe='1h', price_target=np.float64(0.061714399999999996), stop_loss=np.float64(0.0730500487910179), risk_reward_ratio=3.0, reasoning='SuperTrend bearish', timestamp='2026-03-13T16:42:20.543100')"
         ],
         "trend_analysis": {
-          "direction": "TrendDirection.BEARISH",
-          "strength": 0.45,
-          "confidence": 0.9,
+          "direction": "TrendDirection.NEUTRAL",
+          "strength": 0.25,
+          "confidence": 0.5,
           "key_levels": {
-            "sma_20": 0.06719900000000004,
-            "sma_50": 0.0659998
+            "sma_20": 0.06763950000000003,
+            "sma_50": 0.0665174
           },
           "trend_factors": [
+            "Price above both MA20 and MA50",
             "SuperTrend bearish",
-            "MACD below signal line"
+            "MACD above signal line"
           ]
         },
         "support_resistance": {
           "immediate_support": 0.06472,
-          "immediate_resistance": 0.06985,
-          "strong_support": 0.06139,
+          "immediate_resistance": 0.07075,
+          "strong_support": 0.06195,
           "strong_resistance": 0.08003,
           "pivot_levels": {
-            "pivot_point": 0.06679666666666666,
-            "resistance_1": 0.06692333333333332,
-            "support_1": 0.06673333333333331,
-            "resistance_2": 0.06698666666666667,
-            "support_2": 0.06660666666666665
+            "pivot_point": 0.06791666666666667,
+            "resistance_1": 0.06825333333333333,
+            "support_1": 0.06752333333333334,
+            "resistance_2": 0.06864666666666666,
+            "support_2": 0.06718666666666667
           }
         },
         "volume_analysis": {
           "trend": "decreasing",
-          "strength": 1.0,
+          "strength": 0.8342715845762494,
           "patterns": [
             "Volume decreasing"
           ],
-          "volume_price_trend": "bearish_divergence"
+          "volume_price_trend": "bullish_divergence"
         },
         "risk_metrics": {
-          "volatility_score": 0.2750074550950024,
+          "volatility_score": 0.2762053451238716,
           "risk_level": "medium",
-          "sharpe_estimate": 0.62992698718179,
-          "max_drawdown_estimate": -15.948051948051948,
+          "sharpe_estimate": 0.7525653239235499,
+          "max_drawdown_estimate": -15.9480519480519,
           "risk_factors": []
         },
         "ai_summary": {
-          "recommendation": "SELL",
-          "confidence": 0.6666666666666666,
+          "recommendation": "HOLD",
+          "confidence": 0.5,
           "risk_level": "medium",
-          "trend_direction": "BEARISH",
-          "trend_strength": 0.45,
+          "trend_direction": "NEUTRAL",
+          "trend_strength": 0.25,
           "signal_count": {
-            "buy": 0,
-            "sell": 2,
-            "warning": 0
+            "buy": 1,
+            "sell": 1,
+            "warning": 1
           },
-          "key_insights": [],
-          "action_priority": 6,
+          "key_insights": [
+            "Volume surge: 3.6x average"
+          ],
+          "action_priority": 9,
           "optimal_entry": {
-            "aggressive_entry": 0.06711,
+            "aggressive_entry": 0.07013,
             "conservative_entry": 0.06472,
-            "breakout_entry": 0.06985
+            "breakout_entry": 0.07075
           },
           "risk_management": {
             "position_size": 0.1,
-            "stop_loss": 0.06481119593998688,
-            "take_profit_1": 0.07247880000000001,
-            "take_profit_2": 0.0771765,
+            "stop_loss": 0.06768828449713571,
+            "take_profit_1": 0.0757404,
+            "take_profit_2": 0.08064949999999999,
             "max_risk_per_trade": 0.02,
             "hold_period_days": 14
           }
@@ -362,16 +368,16 @@
     "summary": {
       "status": "analyzed",
       "data_quality": 0.69,
-      "signal_count": 2,
+      "signal_count": 3,
       "recommendation": "HOLD",
       "confidence": 0.4666666666666666,
       "risk_level": "very_high",
       "trend_direction": "BULLISH",
       "key_insights": [
-        "24h price change: +25.6%"
+        "24h price change: +31.3%"
       ]
     },
-    "last_updated": "2026-03-13T13:01:42.318619"
+    "last_updated": "2026-03-13T16:42:20.533814"
   },
   "ai_recommendation": {
     "symbol": "STO",
@@ -381,9 +387,9 @@
     "target_allocation": 0,
     "expected_roi": 0.05,
     "reasoning": [
+      "Sell bollinger_bands: Price at upper Bollinger Band (1.03)",
       "Strong supertrend: SuperTrend bullish",
-      "Strong supertrend: SuperTrend bullish",
-      "Sell supertrend: SuperTrend bearish"
+      "Strong supertrend: SuperTrend bullish"
     ],
     "risk_level": "moderate"
   }
