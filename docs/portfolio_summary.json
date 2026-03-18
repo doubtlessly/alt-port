@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-18T13:15:42.678566",
+  "generated_at": "2026-03-18T17:02:20.756567",
   "summary": {
     "total_analyzed": 41,
     "market_sentiment": {
@@ -17,18 +17,18 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.37003798211501315,
+      "risk_score": 0.38884855281501535,
       "diversification_score": 0.5,
-      "momentum_score": 0.13886814787116397,
-      "overall_score": 0.42294338858538355
+      "momentum_score": 0.1285268163193567,
+      "overall_score": 0.41322608783478043
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "reduce",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0.04,
+        "urgency": 9,
+        "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
@@ -53,11 +53,11 @@
       },
       {
         "symbol": "SOL",
-        "action": "strong_buy",
+        "action": "buy",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09388827078746505,
+        "urgency": 8,
+        "target_allocation": 0.12,
+        "expected_roi": 0.09373407497510479,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -85,27 +85,22 @@
         "confidence": 1.0,
         "urgency": 10,
         "target_allocation": 0.1,
-        "expected_roi": 0.09100212424631836,
+        "expected_roi": 0.09078555941875686,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
-          "Strong bollinger_bands: Price at lower Bollinger Band (-0.01)"
+          "Strong rsi_14: Oversold RSI: 21.3"
         ],
         "risk_level": "moderate"
       }
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 37,
+      "immediate_actions_needed": 38,
       "profit_opportunities": 5,
       "risk_alerts": 3,
       "portfolio_balance": "balanced",
       "key_recommendations": [
-        {
-          "symbol": "SOL",
-          "action": "strong_buy",
-          "reasoning": "Strong macd: MACD bullish crossover"
-        },
         {
           "symbol": "PEPE",
           "action": "strong_buy",
@@ -113,7 +108,12 @@
         },
         {
           "symbol": "XRP",
-          "action": "strong_buy",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
+        {
+          "symbol": "RAY",
+          "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
@@ -121,8 +121,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-03-18T13:15:42.676861",
-    "analysis_duration": 15.956636667251587,
+    "generated_at": "2026-03-18T17:02:20.754738",
+    "analysis_duration": 16.60331082344055,
     "total_holdings": 48,
     "successful_analyses": 41,
     "data_completeness": 0.8541666666666666,
