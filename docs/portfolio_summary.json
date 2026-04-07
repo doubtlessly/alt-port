@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-07T17:01:28.828939",
+  "generated_at": "2026-04-07T20:51:11.397888",
   "summary": {
     "total_analyzed": 41,
     "market_sentiment": {
       "bullish": 2,
-      "bearish": 8,
-      "neutral": 31
+      "bearish": 7,
+      "neutral": 32
     },
     "risk_distribution": {
       "medium": 2,
@@ -17,19 +17,19 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.36428207238549243,
+      "risk_score": 0.35295346525480287,
       "diversification_score": 0.5,
-      "momentum_score": 0.14945011023826216,
-      "overall_score": 0.4283893459509232
+      "momentum_score": 0.15601931255099605,
+      "overall_score": 0.4343552824320644
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "sell",
+        "action": "strong_buy",
         "confidence": 1.0,
-        "urgency": 9,
-        "target_allocation": 0,
-        "expected_roi": 0.05,
+        "urgency": 10,
+        "target_allocation": 0.15,
+        "expected_roi": 0.09645619893644193,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -57,39 +57,39 @@
         "confidence": 1.0,
         "urgency": 8,
         "target_allocation": 0.12,
-        "expected_roi": 0.09495334023463539,
+        "expected_roi": 0.0947244044418553,
         "reasoning": [
-          "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish"
+          "Strong supertrend: SuperTrend bullish",
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.02)"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "BONK",
-        "action": "strong_buy",
+        "action": "accumulate",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09421183301512606,
+        "urgency": 7,
+        "target_allocation": 0.08,
+        "expected_roi": 0.0,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish"
+          "Sell bollinger_bands: Price at upper Bollinger Band (0.99)"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "PEPE",
-        "action": "reduce",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0.04,
+        "urgency": 9,
+        "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
-          "Sell supertrend: SuperTrend bearish"
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.01)"
         ],
         "risk_level": "conservative"
       }
@@ -102,27 +102,27 @@
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "BONK",
+          "symbol": "BTC",
           "action": "strong_buy",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
-        {
-          "symbol": "SEI",
-          "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
+          "reasoning": "Strong macd: MACD bullish crossover"
         },
         {
           "symbol": "SYRUP",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
+        },
+        {
+          "symbol": "RAY",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-04-07T17:01:28.827964",
-    "analysis_duration": 16.632265090942383,
+    "generated_at": "2026-04-07T20:51:11.396370",
+    "analysis_duration": 15.80765414237976,
     "total_holdings": 48,
     "successful_analyses": 41,
     "data_completeness": 0.8541666666666666,
