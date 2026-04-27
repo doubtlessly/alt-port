@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-27T06:29:04.249949",
+  "generated_at": "2026-04-27T10:17:30.737622",
   "summary": {
     "total_analyzed": 40,
     "market_sentiment": {
       "bullish": 1,
-      "bearish": 3,
-      "neutral": 36
+      "bearish": 4,
+      "neutral": 35
     },
     "risk_distribution": {
       "medium": 2,
@@ -17,23 +17,23 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.34837116095410786,
+      "risk_score": 0.3817468943624931,
       "diversification_score": 0.5,
-      "momentum_score": 0.2643243773784835,
-      "overall_score": 0.4719844054747919
+      "momentum_score": 0.2683022320975235,
+      "overall_score": 0.46218511257834344
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "strong_buy",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09703450381507375,
+        "urgency": 7,
+        "target_allocation": 0.04,
+        "expected_roi": 0.05,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Strong macd: MACD bullish crossover"
+          "Sell macd: MACD bearish crossover"
         ],
         "risk_level": "conservative"
       },
@@ -53,11 +53,11 @@
       },
       {
         "symbol": "SOL",
-        "action": "stop_loss",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0,
-        "expected_roi": 0.0,
+        "urgency": 7,
+        "target_allocation": 0.04,
+        "expected_roi": 0.05,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
@@ -96,23 +96,23 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 36,
+      "immediate_actions_needed": 34,
       "profit_opportunities": 5,
       "risk_alerts": 2,
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "BTC",
-          "action": "strong_buy",
-          "reasoning": "Strong macd: MACD bullish crossover"
-        },
-        {
-          "symbol": "SOL",
-          "action": "stop_loss",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
-        {
           "symbol": "SEI",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
+        {
+          "symbol": "HBAR",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
+        {
+          "symbol": "SAHARA",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
         }
@@ -121,8 +121,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-04-27T06:29:04.248421",
-    "analysis_duration": 18.22552800178528,
+    "generated_at": "2026-04-27T10:17:30.736324",
+    "analysis_duration": 16.433656692504883,
     "total_holdings": 48,
     "successful_analyses": 40,
     "data_completeness": 0.8333333333333334,
