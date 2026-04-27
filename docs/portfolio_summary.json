@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-04-26T20:41:01.731580",
+  "generated_at": "2026-04-27T02:51:18.581848",
   "summary": {
     "total_analyzed": 40,
     "market_sentiment": {
       "bullish": 1,
-      "bearish": 4,
-      "neutral": 35
+      "bearish": 3,
+      "neutral": 36
     },
     "risk_distribution": {
       "medium": 2,
       "high": 9,
       "very_high": 29
     },
-    "data_quality_average": 0.9277
+    "data_quality_average": 0.9279999999999999
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.30844233516074526,
+      "risk_score": 0.34688997651910536,
       "diversification_score": 0.5,
-      "momentum_score": 0.25730734621581497,
-      "overall_score": 0.48295500368502325
+      "momentum_score": 0.27885194916520034,
+      "overall_score": 0.47732065754869835
     },
     "top_recommendations": [
       {
@@ -29,7 +29,7 @@
         "confidence": 1.0,
         "urgency": 10,
         "target_allocation": 0.15,
-        "expected_roi": 0.09737241416480362,
+        "expected_roi": 0.09720699637169015,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -39,11 +39,11 @@
       },
       {
         "symbol": "ETH",
-        "action": "strong_buy",
+        "action": "accumulate",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09647026888062843,
+        "urgency": 7,
+        "target_allocation": 0.08,
+        "expected_roi": 0.0,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -53,42 +53,42 @@
       },
       {
         "symbol": "SOL",
-        "action": "buy",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.12,
-        "expected_roi": 0.09646008883638893,
+        "urgency": 7,
+        "target_allocation": 0.04,
+        "expected_roi": 0.05,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish",
-          "Sell supertrend: SuperTrend bearish"
-        ],
-        "risk_level": "conservative"
-      },
-      {
-        "symbol": "BONK",
-        "action": "strong_buy",
-        "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09487174894319805,
-        "reasoning": [
-          "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish",
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.05)",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
       },
       {
-        "symbol": "PEPE",
-        "action": "strong_buy",
+        "symbol": "BONK",
+        "action": "accumulate",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09478054401602018,
+        "urgency": 7,
+        "target_allocation": 0.08,
+        "expected_roi": 0.0,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.07)"
+        ],
+        "risk_level": "conservative"
+      },
+      {
+        "symbol": "PEPE",
+        "action": "sell",
+        "confidence": 1.0,
+        "urgency": 9,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
+        "reasoning": [
+          "Strong supertrend: SuperTrend bullish",
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.01)",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
@@ -96,9 +96,9 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 39,
+      "immediate_actions_needed": 34,
       "profit_opportunities": 5,
-      "risk_alerts": 3,
+      "risk_alerts": 2,
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
@@ -107,22 +107,22 @@
           "reasoning": "Strong macd: MACD bullish crossover"
         },
         {
-          "symbol": "ETH",
-          "action": "strong_buy",
-          "reasoning": "Sell macd: MACD bearish crossover"
+          "symbol": "XRP",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
         },
         {
-          "symbol": "BONK",
-          "action": "strong_buy",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
+          "symbol": "HBAR",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-04-26T20:41:01.730512",
-    "analysis_duration": 49.6667218208313,
+    "generated_at": "2026-04-27T02:51:18.580244",
+    "analysis_duration": 16.564764738082886,
     "total_holdings": 48,
     "successful_analyses": 40,
     "data_completeness": 0.8333333333333334,
