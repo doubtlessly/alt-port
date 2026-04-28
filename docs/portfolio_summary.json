@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-28T06:30:50.159155",
+  "generated_at": "2026-04-28T10:15:11.189918",
   "summary": {
     "total_analyzed": 40,
     "market_sentiment": {
-      "bullish": 1,
-      "bearish": 5,
+      "bullish": 0,
+      "bearish": 6,
       "neutral": 34
     },
     "risk_distribution": {
@@ -17,21 +17,21 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.3923346837355304,
+      "risk_score": 0.42858404083342483,
       "diversification_score": 0.5,
-      "momentum_score": 0.27726747834085896,
-      "overall_score": 0.4616442648684429
+      "momentum_score": 0.27131259018710957,
+      "overall_score": 0.4475761831178949
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "strong_buy",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09711421120263533,
+        "urgency": 9,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
         "reasoning": [
-          "Strong macd: MACD bullish crossover",
+          "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
           "Sell macd: MACD bearish crossover"
         ],
@@ -102,11 +102,6 @@
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "BTC",
-          "action": "strong_buy",
-          "reasoning": "Strong macd: MACD bullish crossover"
-        },
-        {
           "symbol": "SEI",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
@@ -115,14 +110,19 @@
           "symbol": "SAHARA",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
+        {
+          "symbol": "REZ",
+          "action": "strong_buy",
+          "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-04-28T06:30:50.157670",
-    "analysis_duration": 16.127315998077393,
+    "generated_at": "2026-04-28T10:15:11.188519",
+    "analysis_duration": 16.834254264831543,
     "total_holdings": 48,
     "successful_analyses": 40,
     "data_completeness": 0.8333333333333334,
