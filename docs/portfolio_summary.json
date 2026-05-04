@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-04T02:55:39.457754",
+  "generated_at": "2026-05-04T06:40:23.531486",
   "summary": {
     "total_analyzed": 40,
     "market_sentiment": {
       "bullish": 1,
-      "bearish": 9,
-      "neutral": 30
+      "bearish": 8,
+      "neutral": 31
     },
     "risk_distribution": {
       "medium": 2,
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.39477418706752093,
+      "risk_score": 0.34825628638166084,
       "diversification_score": 0.5,
-      "momentum_score": 0.34317821425579204,
-      "overall_score": 0.48280134239609035
+      "momentum_score": 0.33641102090934194,
+      "overall_score": 0.4960515781758937
     },
     "top_recommendations": [
       {
@@ -29,7 +29,7 @@
         "confidence": 1.0,
         "urgency": 8,
         "target_allocation": 0.15,
-        "expected_roi": 0.09730600415285907,
+        "expected_roi": 0.09722115343396817,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -39,11 +39,11 @@
       },
       {
         "symbol": "ETH",
-        "action": "sell",
+        "action": "strong_buy",
         "confidence": 1.0,
-        "urgency": 9,
-        "target_allocation": 0,
-        "expected_roi": 0.05,
+        "urgency": 10,
+        "target_allocation": 0.15,
+        "expected_roi": 0.0962921078306868,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -53,67 +53,67 @@
       },
       {
         "symbol": "SOL",
-        "action": "sell",
+        "action": "stop_loss",
         "confidence": 1.0,
-        "urgency": 9,
+        "urgency": 10,
         "target_allocation": 0,
-        "expected_roi": 0.05,
+        "expected_roi": 0.0,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
-          "Sell bollinger_bands: Price at upper Bollinger Band (1.15)",
-          "Strong supertrend: SuperTrend bullish"
+          "Strong supertrend: SuperTrend bullish",
+          "Sell supertrend: SuperTrend bearish"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "BONK",
-        "action": "sell",
+        "action": "strong_buy",
         "confidence": 1.0,
-        "urgency": 9,
-        "target_allocation": 0,
-        "expected_roi": 0.05,
+        "urgency": 10,
+        "target_allocation": 0.15,
+        "expected_roi": 0.09499747444958749,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
-          "Sell bollinger_bands: Price at upper Bollinger Band (1.09)",
+          "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "PEPE",
-        "action": "sell",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 9,
-        "target_allocation": 0,
+        "urgency": 7,
+        "target_allocation": 0.04,
         "expected_roi": 0.05,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
-          "Sell bollinger_bands: Price at upper Bollinger Band (1.15)",
-          "Strong supertrend: SuperTrend bullish"
+          "Strong supertrend: SuperTrend bullish",
+          "Sell supertrend: SuperTrend bearish"
         ],
         "risk_level": "conservative"
       }
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 37,
+      "immediate_actions_needed": 35,
       "profit_opportunities": 5,
       "risk_alerts": 3,
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "STO",
-          "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
+          "symbol": "ETH",
+          "action": "strong_buy",
+          "reasoning": "Sell macd: MACD bearish crossover"
         },
         {
-          "symbol": "COMP",
-          "action": "strong_buy",
+          "symbol": "SOL",
+          "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         },
         {
-          "symbol": "HOME",
-          "action": "stop_loss",
+          "symbol": "BONK",
+          "action": "strong_buy",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
@@ -121,8 +121,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-05-04T02:55:39.456438",
-    "analysis_duration": 15.949959993362427,
+    "generated_at": "2026-05-04T06:40:23.529766",
+    "analysis_duration": 16.661994218826294,
     "total_holdings": 48,
     "successful_analyses": 40,
     "data_completeness": 0.8333333333333334,
