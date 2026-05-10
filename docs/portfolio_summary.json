@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-10T06:34:18.215351",
+  "generated_at": "2026-05-10T09:29:53.838800",
   "summary": {
     "total_analyzed": 40,
     "market_sentiment": {
       "bullish": 1,
-      "bearish": 1,
-      "neutral": 38
+      "bearish": 2,
+      "neutral": 37
     },
     "risk_distribution": {
       "medium": 2,
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.3356664261152186,
+      "risk_score": 0.33794823560096293,
       "diversification_score": 0.5,
-      "momentum_score": 0.37739224899688695,
-      "overall_score": 0.5139086076272229
+      "momentum_score": 0.38630754282537627,
+      "overall_score": 0.5161197690748045
     },
     "top_recommendations": [
       {
@@ -29,7 +29,7 @@
         "confidence": 1.0,
         "urgency": 8,
         "target_allocation": 0.15,
-        "expected_roi": 0.09777151999986097,
+        "expected_roi": 0.09780844306167678,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -53,29 +53,29 @@
       },
       {
         "symbol": "SOL",
-        "action": "strong_buy",
+        "action": "buy",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09669128954775219,
+        "urgency": 8,
+        "target_allocation": 0.12,
+        "expected_roi": 0.09663484439713904,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
-          "Strong supertrend: SuperTrend bullish",
+          "Sell bollinger_bands: Price at upper Bollinger Band (0.98)",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "BONK",
-        "action": "strong_buy",
+        "action": "accumulate",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09483425782012657,
+        "urgency": 7,
+        "target_allocation": 0.08,
+        "expected_roi": 0.0,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish"
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.02)"
         ],
         "risk_level": "conservative"
       },
@@ -85,7 +85,7 @@
         "confidence": 1.0,
         "urgency": 6,
         "target_allocation": 0.12,
-        "expected_roi": 0.09532028056073989,
+        "expected_roi": 0.09535713314809346,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
@@ -96,23 +96,23 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 38,
+      "immediate_actions_needed": 36,
       "profit_opportunities": 5,
       "risk_alerts": 4,
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "SOL",
-          "action": "strong_buy",
-          "reasoning": "Strong macd: MACD bullish crossover"
-        },
-        {
-          "symbol": "BONK",
-          "action": "strong_buy",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
-        {
           "symbol": "MAGIC",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
+        {
+          "symbol": "MAV",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
+        {
+          "symbol": "STO",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
         }
@@ -121,8 +121,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-05-10T06:34:18.214446",
-    "analysis_duration": 16.422394514083862,
+    "generated_at": "2026-05-10T09:29:53.837143",
+    "analysis_duration": 16.52455449104309,
     "total_holdings": 48,
     "successful_analyses": 40,
     "data_completeness": 0.8333333333333334,
