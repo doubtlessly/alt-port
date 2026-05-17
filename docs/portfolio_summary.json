@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T13:23:07.009085",
+  "generated_at": "2026-05-17T16:58:57.523326",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.4763005167753567,
+      "risk_score": 0.4854451659091823,
       "diversification_score": 0.5,
-      "momentum_score": 0.3619222165415796,
-      "overall_score": 0.46187389992207434
+      "momentum_score": 0.3579457853598711,
+      "overall_score": 0.45750020648356293
     },
     "top_recommendations": [
       {
@@ -39,15 +39,15 @@
       },
       {
         "symbol": "ETH",
-        "action": "sell",
+        "action": "stop_loss",
         "confidence": 1.0,
-        "urgency": 9,
+        "urgency": 10,
         "target_allocation": 0,
-        "expected_roi": 0.05,
+        "expected_roi": 0.0,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Sell macd: MACD bearish crossover"
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
       },
@@ -57,7 +57,7 @@
         "confidence": 1.0,
         "urgency": 8,
         "target_allocation": 0.12,
-        "expected_roi": 0.09605739585302431,
+        "expected_roi": 0.09607417348964283,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -81,11 +81,11 @@
       },
       {
         "symbol": "PEPE",
-        "action": "buy",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 6,
-        "target_allocation": 0.12,
-        "expected_roi": 0.09445081202441923,
+        "urgency": 5,
+        "target_allocation": 0.04,
+        "expected_roi": 0.05,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
@@ -102,6 +102,11 @@
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
+          "symbol": "ETH",
+          "action": "stop_loss",
+          "reasoning": "Sell macd: MACD bearish crossover"
+        },
+        {
           "symbol": "XRP",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
@@ -110,19 +115,14 @@
           "symbol": "RAY",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
-        {
-          "symbol": "MAGIC",
-          "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "neutral"
     }
   },
   "metadata": {
-    "generated_at": "2026-05-17T13:23:07.007669",
-    "analysis_duration": 16.148479461669922,
+    "generated_at": "2026-05-17T16:58:57.522014",
+    "analysis_duration": 17.35254669189453,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
