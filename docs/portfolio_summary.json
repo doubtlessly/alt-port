@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-18T03:44:10.233239",
+  "generated_at": "2026-05-18T08:05:39.125920",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
-      "bullish": 1,
+      "bullish": 0,
       "bearish": 16,
-      "neutral": 22
+      "neutral": 23
     },
     "risk_distribution": {
       "medium": 2,
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.52199862820836,
+      "risk_score": 0.5133094598642193,
       "diversification_score": 0.5,
-      "momentum_score": 0.3125546313229305,
-      "overall_score": 0.43018533437152345
+      "momentum_score": 0.309903998226148,
+      "overall_score": 0.4321981794539762
     },
     "top_recommendations": [
       {
@@ -46,17 +46,17 @@
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.05)",
-          "Strong supertrend: SuperTrend bullish"
+          "Strong supertrend: SuperTrend bullish",
+          "Sell macd: MACD bearish crossover"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "SOL",
-        "action": "stop_loss",
+        "action": "accumulate",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0,
+        "urgency": 7,
+        "target_allocation": 0.08,
         "expected_roi": 0.0,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
@@ -102,11 +102,6 @@
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "SOL",
-          "action": "stop_loss",
-          "reasoning": "Sell macd: MACD bearish crossover"
-        },
-        {
           "symbol": "XRP",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
@@ -115,14 +110,19 @@
           "symbol": "HBAR",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
+        {
+          "symbol": "CRV",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "neutral"
     }
   },
   "metadata": {
-    "generated_at": "2026-05-18T03:44:10.231539",
-    "analysis_duration": 17.27114462852478,
+    "generated_at": "2026-05-18T08:05:39.124590",
+    "analysis_duration": 16.816284656524658,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
