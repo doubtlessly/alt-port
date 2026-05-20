@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T10:51:47.452632",
+  "generated_at": "2026-05-20T15:22:15.003321",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.3817162483504059,
+      "risk_score": 0.3773713505198928,
       "diversification_score": 0.5,
-      "momentum_score": 0.322100435680771,
-      "overall_score": 0.480128062443455
+      "momentum_score": 0.3299675922317101,
+      "overall_score": 0.48419874723727246
     },
     "top_recommendations": [
       {
@@ -29,7 +29,7 @@
         "confidence": 1.0,
         "urgency": 10,
         "target_allocation": 0.15,
-        "expected_roi": 0.0974239728196364,
+        "expected_roi": 0.0973486199159073,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -43,7 +43,7 @@
         "confidence": 1.0,
         "urgency": 10,
         "target_allocation": 0.15,
-        "expected_roi": 0.09644320262993764,
+        "expected_roi": 0.09635384458663945,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -53,11 +53,11 @@
       },
       {
         "symbol": "SOL",
-        "action": "strong_buy",
+        "action": "accumulate",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.0960989927893759,
+        "urgency": 7,
+        "target_allocation": 0.08,
+        "expected_roi": 0.0,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -67,20 +67,6 @@
       },
       {
         "symbol": "BONK",
-        "action": "sell",
-        "confidence": 1.0,
-        "urgency": 9,
-        "target_allocation": 0,
-        "expected_roi": 0.05,
-        "reasoning": [
-          "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish",
-          "Sell bollinger_bands: Price at upper Bollinger Band (1.00)"
-        ],
-        "risk_level": "conservative"
-      },
-      {
-        "symbol": "PEPE",
         "action": "reduce",
         "confidence": 1.0,
         "urgency": 7,
@@ -92,11 +78,25 @@
           "Sell supertrend: SuperTrend bearish"
         ],
         "risk_level": "conservative"
+      },
+      {
+        "symbol": "PEPE",
+        "action": "sell",
+        "confidence": 1.0,
+        "urgency": 9,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
+        "reasoning": [
+          "Strong supertrend: SuperTrend bullish",
+          "Strong supertrend: SuperTrend bullish",
+          "Sell bollinger_bands: Price at upper Bollinger Band (0.96)"
+        ],
+        "risk_level": "conservative"
       }
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 33,
+      "immediate_actions_needed": 30,
       "profit_opportunities": 5,
       "risk_alerts": 1,
       "portfolio_balance": "balanced",
@@ -112,17 +112,17 @@
           "reasoning": "Sell macd: MACD bearish crossover"
         },
         {
-          "symbol": "SOL",
-          "action": "strong_buy",
-          "reasoning": "Sell macd: MACD bearish crossover"
+          "symbol": "XRP",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "neutral"
     }
   },
   "metadata": {
-    "generated_at": "2026-05-20T10:51:47.451047",
-    "analysis_duration": 16.602117776870728,
+    "generated_at": "2026-05-20T15:22:15.001698",
+    "analysis_duration": 17.193556785583496,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
