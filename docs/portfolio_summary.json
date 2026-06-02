@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-02T04:02:46.009783",
+  "generated_at": "2026-06-02T12:05:16.481795",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
-      "bullish": 0,
+      "bullish": 1,
       "bearish": 11,
-      "neutral": 28
+      "neutral": 27
     },
     "risk_distribution": {
       "medium": 2,
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.38175421420511335,
+      "risk_score": 0.39215075358456064,
       "diversification_score": 0.5,
-      "momentum_score": 0.3276498688423148,
-      "overall_score": 0.4819652182124005
+      "momentum_score": 0.32563477633025995,
+      "overall_score": 0.47782800758189986
     },
     "top_recommendations": [
       {
@@ -29,7 +29,21 @@
         "confidence": 1.0,
         "urgency": 8,
         "target_allocation": 0.12,
-        "expected_roi": 0.0971221083354886,
+        "expected_roi": 0.09696840016065178,
+        "reasoning": [
+          "Sell macd: MACD bearish crossover",
+          "Strong bollinger_bands: Price at lower Bollinger Band (0.03)",
+          "Strong supertrend: SuperTrend bullish"
+        ],
+        "risk_level": "conservative"
+      },
+      {
+        "symbol": "ETH",
+        "action": "sell",
+        "confidence": 1.0,
+        "urgency": 9,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -38,26 +52,12 @@
         "risk_level": "conservative"
       },
       {
-        "symbol": "ETH",
-        "action": "strong_buy",
+        "symbol": "SOL",
+        "action": "stop_loss",
         "confidence": 1.0,
         "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09637559753543251,
-        "reasoning": [
-          "Sell macd: MACD bearish crossover",
-          "Strong supertrend: SuperTrend bullish",
-          "Strong macd: MACD bullish crossover"
-        ],
-        "risk_level": "conservative"
-      },
-      {
-        "symbol": "SOL",
-        "action": "buy",
-        "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.12,
-        "expected_roi": 0.09589204537591059,
+        "target_allocation": 0,
+        "expected_roi": 0.0,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -71,7 +71,7 @@
         "confidence": 1.0,
         "urgency": 10,
         "target_allocation": 0.15,
-        "expected_roi": 0.09389449704352444,
+        "expected_roi": 0.09387010443324001,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
@@ -85,7 +85,7 @@
         "confidence": 1.0,
         "urgency": 8,
         "target_allocation": 0.15,
-        "expected_roi": 0.09471512075540675,
+        "expected_roi": 0.09450954009645593,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
@@ -96,14 +96,14 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 38,
+      "immediate_actions_needed": 37,
       "profit_opportunities": 5,
       "risk_alerts": 1,
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "ETH",
-          "action": "strong_buy",
+          "symbol": "SOL",
+          "action": "stop_loss",
           "reasoning": "Sell macd: MACD bearish crossover"
         },
         {
@@ -121,8 +121,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-06-02T04:02:46.008256",
-    "analysis_duration": 16.5619797706604,
+    "generated_at": "2026-06-02T12:05:16.480522",
+    "analysis_duration": 16.24499773979187,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
