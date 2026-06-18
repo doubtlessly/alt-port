@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T18:27:37.833145",
+  "generated_at": "2026-06-18T22:10:43.387328",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.4932556194168571,
+      "risk_score": 0.5004160934695769,
       "diversification_score": 0.5,
-      "momentum_score": 0.16168481395289874,
-      "overall_score": 0.38947639817868057
+      "momentum_score": 0.1702151612171499,
+      "overall_score": 0.3899330225825243
     },
     "top_recommendations": [
       {
@@ -53,11 +53,11 @@
       },
       {
         "symbol": "SOL",
-        "action": "reduce",
+        "action": "stop_loss",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0.04,
-        "expected_roi": 0.05,
+        "urgency": 10,
+        "target_allocation": 0,
+        "expected_roi": 0.0,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -96,11 +96,16 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 33,
+      "immediate_actions_needed": 35,
       "profit_opportunities": 5,
       "risk_alerts": 1,
       "portfolio_balance": "balanced",
       "key_recommendations": [
+        {
+          "symbol": "SOL",
+          "action": "stop_loss",
+          "reasoning": "Strong macd: MACD bullish crossover"
+        },
         {
           "symbol": "XRP",
           "action": "stop_loss",
@@ -110,19 +115,14 @@
           "symbol": "SEI",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
-        {
-          "symbol": "SYRUP",
-          "action": "stop_loss",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-06-18T18:27:37.831704",
-    "analysis_duration": 16.397516012191772,
+    "generated_at": "2026-06-18T22:10:43.385593",
+    "analysis_duration": 16.05314803123474,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
