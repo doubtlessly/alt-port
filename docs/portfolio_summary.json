@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T14:50:49.014303",
+  "generated_at": "2026-06-23T17:56:56.990024",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.4024231374452678,
+      "risk_score": 0.42358163070275207,
       "diversification_score": 0.5,
-      "momentum_score": 0.10689080382450461,
-      "overall_score": 0.4014892221264123
+      "momentum_score": 0.10270822845485417,
+      "overall_score": 0.3930421992507007
     },
     "top_recommendations": [
       {
@@ -39,10 +39,10 @@
       },
       {
         "symbol": "ETH",
-        "action": "reduce",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0.04,
+        "urgency": 9,
+        "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
@@ -81,26 +81,31 @@
       },
       {
         "symbol": "PEPE",
-        "action": "reduce",
+        "action": "accumulate",
         "confidence": 1.0,
         "urgency": 7,
-        "target_allocation": 0.04,
-        "expected_roi": 0.05,
+        "target_allocation": 0.08,
+        "expected_roi": 0.0,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish",
-          "Sell supertrend: SuperTrend bearish"
+          "Strong bollinger_bands: Price at lower Bollinger Band (0.03)",
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
       }
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 34,
+      "immediate_actions_needed": 36,
       "profit_opportunities": 5,
       "risk_alerts": 3,
       "portfolio_balance": "balanced",
       "key_recommendations": [
+        {
+          "symbol": "XRP",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
         {
           "symbol": "SEI",
           "action": "stop_loss",
@@ -110,19 +115,14 @@
           "symbol": "SYRUP",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
-        {
-          "symbol": "RAY",
-          "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-06-23T14:50:49.012646",
-    "analysis_duration": 16.868083477020264,
+    "generated_at": "2026-06-23T17:56:56.988712",
+    "analysis_duration": 16.64980673789978,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
