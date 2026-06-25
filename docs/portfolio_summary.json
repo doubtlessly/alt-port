@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T18:11:45.762848",
+  "generated_at": "2026-06-25T21:44:12.269766",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.4441586979416626,
+      "risk_score": 0.4484934915379676,
       "diversification_score": 0.5,
-      "momentum_score": 0.09847427959233979,
-      "overall_score": 0.3847718605502258
+      "momentum_score": 0.09787006323659453,
+      "overall_score": 0.3831255238995423
     },
     "top_recommendations": [
       {
@@ -53,15 +53,15 @@
       },
       {
         "symbol": "SOL",
-        "action": "reduce",
+        "action": "stop_loss",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0.04,
-        "expected_roi": 0.05,
+        "urgency": 10,
+        "target_allocation": 0,
+        "expected_roi": 0.0,
         "reasoning": [
+          "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish",
-          "Sell supertrend: SuperTrend bearish"
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
       },
@@ -85,10 +85,10 @@
         "confidence": 1.0,
         "urgency": 10,
         "target_allocation": 0.1,
-        "expected_roi": 0.09166233870487298,
+        "expected_roi": 0.0918025331156294,
         "reasoning": [
-          "Strong rsi_14: Oversold RSI: 20.6",
-          "Strong bollinger_bands: Price at lower Bollinger Band (-0.11)",
+          "Strong rsi_14: Oversold RSI: 21.0",
+          "Strong bollinger_bands: Price at lower Bollinger Band (-0.09)",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "moderate"
@@ -96,33 +96,33 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 35,
+      "immediate_actions_needed": 37,
       "profit_opportunities": 5,
-      "risk_alerts": 2,
+      "risk_alerts": 3,
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
+          "symbol": "SOL",
+          "action": "stop_loss",
+          "reasoning": "Strong macd: MACD bullish crossover"
+        },
+        {
           "symbol": "PEPE",
           "action": "strong_buy",
-          "reasoning": "Strong rsi_14: Oversold RSI: 20.6"
+          "reasoning": "Strong rsi_14: Oversold RSI: 21.0"
         },
         {
           "symbol": "SEI",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
-        {
-          "symbol": "SYRUP",
-          "action": "stop_loss",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-06-25T18:11:45.761292",
-    "analysis_duration": 15.671072959899902,
+    "generated_at": "2026-06-25T21:44:12.268398",
+    "analysis_duration": 16.577818393707275,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
