@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-25T10:43:43.649457",
+  "generated_at": "2026-06-25T14:37:03.017801",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
       "bullish": 2,
-      "bearish": 5,
-      "neutral": 32
+      "bearish": 6,
+      "neutral": 31
     },
     "risk_distribution": {
       "medium": 2,
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.3971255206940205,
+      "risk_score": 0.47701871393356643,
       "diversification_score": 0.5,
-      "momentum_score": 0.11248852428297251,
-      "overall_score": 0.40512100119631733
+      "momentum_score": 0.09596004894850552,
+      "overall_score": 0.3729804450049797
     },
     "top_recommendations": [
       {
@@ -39,11 +39,11 @@
       },
       {
         "symbol": "ETH",
-        "action": "strong_buy",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09476515805757894,
+        "urgency": 9,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -53,20 +53,6 @@
       },
       {
         "symbol": "SOL",
-        "action": "buy",
-        "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.12,
-        "expected_roi": 0.09395039583105165,
-        "reasoning": [
-          "Strong macd: MACD bullish crossover",
-          "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish"
-        ],
-        "risk_level": "conservative"
-      },
-      {
-        "symbol": "BONK",
         "action": "reduce",
         "confidence": 1.0,
         "urgency": 7,
@@ -80,34 +66,48 @@
         "risk_level": "conservative"
       },
       {
-        "symbol": "PEPE",
-        "action": "accumulate",
+        "symbol": "BONK",
+        "action": "reduce",
         "confidence": 1.0,
         "urgency": 7,
-        "target_allocation": 0.08,
-        "expected_roi": 0.0,
+        "target_allocation": 0.025,
+        "expected_roi": 0.05,
         "reasoning": [
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.04)",
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish"
+          "Strong supertrend: SuperTrend bullish",
+          "Sell supertrend: SuperTrend bearish"
         ],
-        "risk_level": "conservative"
+        "risk_level": "moderate"
+      },
+      {
+        "symbol": "PEPE",
+        "action": "strong_buy",
+        "confidence": 1.0,
+        "urgency": 10,
+        "target_allocation": 0.1,
+        "expected_roi": 0.09190371947151192,
+        "reasoning": [
+          "Strong bollinger_bands: Price at lower Bollinger Band (-0.07)",
+          "Strong supertrend: SuperTrend bullish",
+          "Strong rsi_14: Oversold RSI: 21.5"
+        ],
+        "risk_level": "moderate"
       }
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 36,
+      "immediate_actions_needed": 37,
       "profit_opportunities": 5,
       "risk_alerts": 3,
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "ETH",
+          "symbol": "PEPE",
           "action": "strong_buy",
-          "reasoning": "Strong macd: MACD bullish crossover"
+          "reasoning": "Strong bollinger_bands: Price at lower Bollinger Band (-0.07)"
         },
         {
-          "symbol": "XRP",
+          "symbol": "SEI",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
         },
@@ -121,8 +121,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-06-25T10:43:43.647915",
-    "analysis_duration": 16.744078159332275,
+    "generated_at": "2026-06-25T14:37:03.016419",
+    "analysis_duration": 16.33500027656555,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
