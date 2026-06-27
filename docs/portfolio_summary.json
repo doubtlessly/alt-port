@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-26T21:20:40.812242",
+  "generated_at": "2026-06-27T03:31:05.283401",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
-      "bullish": 1,
-      "bearish": 5,
-      "neutral": 33
+      "bullish": 0,
+      "bearish": 4,
+      "neutral": 35
     },
     "risk_distribution": {
       "medium": 2,
       "high": 9,
       "very_high": 28
     },
-    "data_quality_average": 0.9648205128205128
+    "data_quality_average": 0.9650256410256411
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.4246627113506673,
+      "risk_score": 0.4144930967421268,
       "diversification_score": 0.5,
-      "momentum_score": 0.11143806357829522,
-      "overall_score": 0.395591784075876
+      "momentum_score": 0.1375012961254073,
+      "overall_score": 0.4076693997944269
     },
     "top_recommendations": [
       {
@@ -33,19 +33,19 @@
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Sell macd: MACD bearish crossover"
+          "Strong macd: MACD bullish crossover"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "ETH",
-        "action": "buy",
+        "action": "strong_buy",
         "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.12,
-        "expected_roi": 0.09384698645095985,
+        "urgency": 10,
+        "target_allocation": 0.15,
+        "expected_roi": 0.09433884217976225,
         "reasoning": [
-          "Strong supertrend: SuperTrend bullish",
+          "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
           "Strong macd: MACD bullish crossover"
         ],
@@ -57,7 +57,7 @@
         "confidence": 1.0,
         "urgency": 10,
         "target_allocation": 0.15,
-        "expected_roi": 0.0928245085667903,
+        "expected_roi": 0.0932937970282766,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -70,37 +70,42 @@
         "action": "reduce",
         "confidence": 1.0,
         "urgency": 7,
-        "target_allocation": 0.025,
+        "target_allocation": 0.04,
         "expected_roi": 0.05,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
           "Sell supertrend: SuperTrend bearish"
         ],
-        "risk_level": "moderate"
+        "risk_level": "conservative"
       },
       {
         "symbol": "PEPE",
-        "action": "buy",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.12,
-        "expected_roi": 0.09219541437452072,
+        "urgency": 7,
+        "target_allocation": 0.04,
+        "expected_roi": 0.05,
         "reasoning": [
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.03)",
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish"
+          "Strong supertrend: SuperTrend bullish",
+          "Sell supertrend: SuperTrend bearish"
         ],
         "risk_level": "conservative"
       }
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 38,
+      "immediate_actions_needed": 37,
       "profit_opportunities": 5,
       "risk_alerts": 4,
       "portfolio_balance": "balanced",
       "key_recommendations": [
+        {
+          "symbol": "ETH",
+          "action": "strong_buy",
+          "reasoning": "Sell macd: MACD bearish crossover"
+        },
         {
           "symbol": "SOL",
           "action": "strong_buy",
@@ -110,19 +115,14 @@
           "symbol": "SEI",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
-        {
-          "symbol": "HBAR",
-          "action": "strong_buy",
-          "reasoning": "Strong bollinger_bands: Price at lower Bollinger Band (-0.04)"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-06-26T21:20:40.811097",
-    "analysis_duration": 16.93388605117798,
+    "generated_at": "2026-06-27T03:31:05.281551",
+    "analysis_duration": 16.664820909500122,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
