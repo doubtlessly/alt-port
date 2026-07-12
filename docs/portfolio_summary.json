@@ -1,39 +1,39 @@
 {
-  "generated_at": "2026-07-11T20:50:06.056260",
+  "generated_at": "2026-07-12T02:47:51.588733",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
       "bullish": 2,
-      "bearish": 1,
-      "neutral": 36
+      "bearish": 3,
+      "neutral": 34
     },
     "risk_distribution": {
       "medium": 2,
       "high": 9,
       "very_high": 28
     },
-    "data_quality_average": 0.967897435897436
+    "data_quality_average": 0.9680512820512822
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.3217322539073341,
+      "risk_score": 0.3601458571186974,
       "diversification_score": 0.5,
-      "momentum_score": 0.24863657423203633,
-      "overall_score": 0.4756347734415674
+      "momentum_score": 0.21881260003302405,
+      "overall_score": 0.45288891430477546
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "strong_buy",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09707867799781733,
+        "urgency": 9,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Strong macd: MACD bullish crossover"
+          "Sell macd: MACD bearish crossover"
         ],
         "risk_level": "conservative"
       },
@@ -43,7 +43,7 @@
         "confidence": 1.0,
         "urgency": 10,
         "target_allocation": 0.15,
-        "expected_roi": 0.09617840710629932,
+        "expected_roi": 0.09607876148465104,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -53,15 +53,15 @@
       },
       {
         "symbol": "SOL",
-        "action": "strong_buy",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09566446720432178,
+        "urgency": 7,
+        "target_allocation": 0.04,
+        "expected_roi": 0.05,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish"
+          "Sell supertrend: SuperTrend bearish"
         ],
         "risk_level": "conservative"
       },
@@ -85,7 +85,7 @@
         "confidence": 1.0,
         "urgency": 10,
         "target_allocation": 0.15,
-        "expected_roi": 0.09405204018339634,
+        "expected_roi": 0.09379509565324635,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
@@ -96,33 +96,33 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 37,
+      "immediate_actions_needed": 35,
       "profit_opportunities": 5,
       "risk_alerts": 4,
       "portfolio_balance": "balanced",
       "key_recommendations": [
-        {
-          "symbol": "BTC",
-          "action": "strong_buy",
-          "reasoning": "Strong macd: MACD bullish crossover"
-        },
         {
           "symbol": "ETH",
           "action": "strong_buy",
           "reasoning": "Strong macd: MACD bullish crossover"
         },
         {
-          "symbol": "SOL",
+          "symbol": "PEPE",
           "action": "strong_buy",
           "reasoning": "Strong supertrend: SuperTrend bullish"
+        },
+        {
+          "symbol": "SEI",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-07-11T20:50:06.054588",
-    "analysis_duration": 16.71056842803955,
+    "generated_at": "2026-07-12T02:47:51.587343",
+    "analysis_duration": 16.613490343093872,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
