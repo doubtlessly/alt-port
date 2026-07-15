@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T10:03:57.616457",
+  "generated_at": "2026-07-15T13:45:08.214171",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
@@ -17,10 +17,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.3132070701277743,
+      "risk_score": 0.3211079266604036,
       "diversification_score": 0.5,
-      "momentum_score": 0.2431197618252135,
-      "overall_score": 0.4766375638991464
+      "momentum_score": 0.2524590928371665,
+      "overall_score": 0.4771170553922543
     },
     "top_recommendations": [
       {
@@ -29,7 +29,7 @@
         "confidence": 1.0,
         "urgency": 10,
         "target_allocation": 0.15,
-        "expected_roi": 0.09696323860386902,
+        "expected_roi": 0.09692155389910954,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -43,7 +43,7 @@
         "confidence": 1.0,
         "urgency": 10,
         "target_allocation": 0.15,
-        "expected_roi": 0.0959708657620709,
+        "expected_roi": 0.09573745825979141,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -53,15 +53,15 @@
       },
       {
         "symbol": "SOL",
-        "action": "reduce",
+        "action": "stop_loss",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0.04,
-        "expected_roi": 0.05,
+        "urgency": 10,
+        "target_allocation": 0,
+        "expected_roi": 0.0,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish",
-          "Sell supertrend: SuperTrend bearish"
+          "Strong macd: MACD bullish crossover",
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
       },
@@ -81,14 +81,14 @@
       },
       {
         "symbol": "PEPE",
-        "action": "strong_buy",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09405087849634348,
+        "urgency": 9,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish",
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.04)",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
@@ -96,7 +96,7 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 36,
+      "immediate_actions_needed": 35,
       "profit_opportunities": 5,
       "risk_alerts": 4,
       "portfolio_balance": "balanced",
@@ -112,8 +112,8 @@
           "reasoning": "Strong macd: MACD bullish crossover"
         },
         {
-          "symbol": "PEPE",
-          "action": "strong_buy",
+          "symbol": "SOL",
+          "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
@@ -121,8 +121,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-07-15T10:03:57.614656",
-    "analysis_duration": 15.826821088790894,
+    "generated_at": "2026-07-15T13:45:08.212644",
+    "analysis_duration": 16.34049701690674,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
