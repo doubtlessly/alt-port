@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T17:24:29.474206",
+  "generated_at": "2026-07-23T21:05:45.527415",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
@@ -18,19 +18,19 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.333785191043699,
+      "risk_score": 0.3361771517392703,
       "diversification_score": 0.5,
-      "momentum_score": 0.3410359216806118,
-      "overall_score": 0.5024169102123043
+      "momentum_score": 0.3390814130979236,
+      "overall_score": 0.5009680871195511
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "buy",
+        "action": "strong_buy",
         "confidence": 1.0,
-        "urgency": 6,
-        "target_allocation": 0.12,
-        "expected_roi": 0.09733316261714503,
+        "urgency": 8,
+        "target_allocation": 0.15,
+        "expected_roi": 0.09736242471571518,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -54,15 +54,15 @@
       },
       {
         "symbol": "SOL",
-        "action": "stop_loss",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 10,
+        "urgency": 7,
         "target_allocation": 0,
-        "expected_roi": 0.0,
+        "expected_roi": 0.05,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
-          "Strong bollinger_bands: Price at lower Bollinger Band (-0.01)",
-          "Strong supertrend: SuperTrend bullish"
+          "Strong supertrend: SuperTrend bullish",
+          "Sell supertrend: SuperTrend bearish"
         ],
         "risk_level": "conservative"
       },
@@ -72,7 +72,7 @@
         "confidence": 1.0,
         "urgency": 10,
         "target_allocation": 0.1,
-        "expected_roi": 0.0889241543966879,
+        "expected_roi": 0.08897956453687154,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
@@ -103,11 +103,6 @@
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "SOL",
-          "action": "stop_loss",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
-        {
           "symbol": "BONK",
           "action": "strong_buy",
           "reasoning": "Strong supertrend: SuperTrend bullish"
@@ -116,14 +111,19 @@
           "symbol": "XRP",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
+        {
+          "symbol": "SEI",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "neutral"
     }
   },
   "metadata": {
-    "generated_at": "2026-07-23T17:24:29.472587",
-    "analysis_duration": 16.704813957214355,
+    "generated_at": "2026-07-23T21:05:45.526121",
+    "analysis_duration": 16.30484628677368,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
