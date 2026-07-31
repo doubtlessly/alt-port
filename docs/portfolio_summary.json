@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-31T14:07:23.790002",
+  "generated_at": "2026-07-31T17:37:42.595660",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
       "bullish": 0,
-      "bearish": 9,
-      "neutral": 30
+      "bearish": 8,
+      "neutral": 31
     },
     "risk_distribution": {
       "medium": 4,
@@ -18,18 +18,18 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.34087664684142716,
+      "risk_score": 0.37626870265696294,
       "diversification_score": 0.5,
-      "momentum_score": 0.2536126514889532,
-      "overall_score": 0.4709120015491753
+      "momentum_score": 0.2635356035196184,
+      "overall_score": 0.4624223002875518
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "reduce",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.04,
+        "urgency": 7,
+        "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
@@ -40,10 +40,10 @@
       },
       {
         "symbol": "ETH",
-        "action": "reduce",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.04,
+        "urgency": 7,
+        "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
@@ -82,31 +82,26 @@
       },
       {
         "symbol": "PEPE",
-        "action": "strong_buy",
+        "action": "accumulate",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09425677129046225,
+        "urgency": 7,
+        "target_allocation": 0.08,
+        "expected_roi": 0.0,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish"
+          "Sell bollinger_bands: Price at upper Bollinger Band (0.97)"
         ],
         "risk_level": "conservative"
       }
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 31,
+      "immediate_actions_needed": 32,
       "profit_opportunities": 5,
       "risk_alerts": 4,
       "portfolio_balance": "balanced",
       "key_recommendations": [
-        {
-          "symbol": "PEPE",
-          "action": "strong_buy",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
         {
           "symbol": "SYRUP",
           "action": "strong_buy",
@@ -116,14 +111,19 @@
           "symbol": "HBAR",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
+        },
+        {
+          "symbol": "CRV",
+          "action": "stop_loss",
+          "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-07-31T14:07:23.788611",
-    "analysis_duration": 15.632285356521606,
+    "generated_at": "2026-07-31T17:37:42.594390",
+    "analysis_duration": 16.481903076171875,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
