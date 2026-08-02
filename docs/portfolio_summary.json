@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-01T20:54:23.878985",
+  "generated_at": "2026-08-02T02:48:12.130587",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
       "bullish": 0,
-      "bearish": 7,
-      "neutral": 32
+      "bearish": 8,
+      "neutral": 31
     },
     "risk_distribution": {
       "medium": 4,
@@ -13,15 +13,15 @@
       "high": 10,
       "unknown": 1
     },
-    "data_quality_average": 0.9603589743589743
+    "data_quality_average": 0.9604102564102565
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.32504621497825015,
+      "risk_score": 0.32025777277615625,
       "diversification_score": 0.5,
-      "momentum_score": 0.27024731175190597,
-      "overall_score": 0.4817336989245519
+      "momentum_score": 0.27156497052491324,
+      "overall_score": 0.48376906591625235
     },
     "top_recommendations": [
       {
@@ -40,11 +40,11 @@
       },
       {
         "symbol": "ETH",
-        "action": "reduce",
+        "action": "accumulate",
         "confidence": 1.0,
         "urgency": 5,
-        "target_allocation": 0.04,
-        "expected_roi": 0.05,
+        "target_allocation": 0.08,
+        "expected_roi": 0.0,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -82,14 +82,14 @@
       },
       {
         "symbol": "PEPE",
-        "action": "strong_buy",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 10,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09441148704400242,
+        "urgency": 9,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish",
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.10)",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
@@ -99,14 +99,9 @@
       "overall_health": "good",
       "immediate_actions_needed": 33,
       "profit_opportunities": 5,
-      "risk_alerts": 3,
+      "risk_alerts": 4,
       "portfolio_balance": "balanced",
       "key_recommendations": [
-        {
-          "symbol": "PEPE",
-          "action": "strong_buy",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
         {
           "symbol": "SYRUP",
           "action": "strong_buy",
@@ -116,14 +111,19 @@
           "symbol": "HBAR",
           "action": "strong_buy",
           "reasoning": "Strong supertrend: SuperTrend bullish"
+        },
+        {
+          "symbol": "MAGIC",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-08-01T20:54:23.877544",
-    "analysis_duration": 16.55214238166809,
+    "generated_at": "2026-08-02T02:48:12.129169",
+    "analysis_duration": 15.867148399353027,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
