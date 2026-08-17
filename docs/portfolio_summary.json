@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T20:22:36.051714",
+  "generated_at": "2026-08-17T01:15:52.585392",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
@@ -13,15 +13,15 @@
       "high": 11,
       "unknown": 1
     },
-    "data_quality_average": 0.9611282051282052
+    "data_quality_average": 0.9611794871794873
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.2686351685138829,
+      "risk_score": 0.2868487818343702,
       "diversification_score": 0.5,
-      "momentum_score": 0.35672184134177604,
-      "overall_score": 0.5293622242759644
+      "momentum_score": 0.34794483892722533,
+      "overall_score": 0.520365352364285
     },
     "top_recommendations": [
       {
@@ -30,7 +30,7 @@
         "confidence": 1.0,
         "urgency": 8,
         "target_allocation": 0.15,
-        "expected_roi": 0.09838451760697471,
+        "expected_roi": 0.09832226084312563,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -44,7 +44,7 @@
         "confidence": 1.0,
         "urgency": 8,
         "target_allocation": 0.15,
-        "expected_roi": 0.09789515746787551,
+        "expected_roi": 0.09778034815119348,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -54,15 +54,15 @@
       },
       {
         "symbol": "SOL",
-        "action": "strong_buy",
+        "action": "stop_loss",
         "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09759897740226871,
+        "urgency": 10,
+        "target_allocation": 0,
+        "expected_roi": 0.0,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish"
+          "Sell supertrend: SuperTrend bearish"
         ],
         "risk_level": "conservative"
       },
@@ -97,11 +97,16 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 34,
+      "immediate_actions_needed": 33,
       "profit_opportunities": 5,
       "risk_alerts": 2,
       "portfolio_balance": "balanced",
       "key_recommendations": [
+        {
+          "symbol": "SOL",
+          "action": "stop_loss",
+          "reasoning": "Strong supertrend: SuperTrend bullish"
+        },
         {
           "symbol": "SYRUP",
           "action": "strong_buy",
@@ -111,19 +116,14 @@
           "symbol": "HBAR",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
-        {
-          "symbol": "MAGIC",
-          "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
         }
       ],
       "performance_outlook": "neutral"
     }
   },
   "metadata": {
-    "generated_at": "2026-08-16T20:22:36.050668",
-    "analysis_duration": 15.995907306671143,
+    "generated_at": "2026-08-17T01:15:52.584011",
+    "analysis_duration": 17.99738121032715,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
