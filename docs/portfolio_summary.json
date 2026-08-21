@@ -1,54 +1,54 @@
 {
-  "generated_at": "2026-08-20T16:36:32.629315",
+  "generated_at": "2026-08-21T01:18:15.650819",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
-      "bullish": 0,
-      "bearish": 6,
-      "neutral": 33
+      "bullish": 1,
+      "bearish": 2,
+      "neutral": 36
     },
     "risk_distribution": {
-      "medium": 4,
+      "medium": 5,
       "very_high": 22,
-      "high": 12,
+      "high": 11,
       "unknown": 1
     },
-    "data_quality_average": 0.9613333333333335
+    "data_quality_average": 0.9613846153846154
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.3503406164083011,
+      "risk_score": 0.34159485416936114,
       "diversification_score": 0.5,
-      "momentum_score": 0.456976579554459,
-      "overall_score": 0.5355453210487192
+      "momentum_score": 0.4940233605515975,
+      "overall_score": 0.5508095021274121
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "strong_buy",
-        "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09690096199538084,
-        "reasoning": [
-          "Sell rsi_14: Overbought RSI: 79.4",
-          "Strong macd: MACD bullish crossover",
-          "Sell bollinger_bands: Price at upper Bollinger Band (1.17)"
-        ],
-        "risk_level": "conservative"
-      },
-      {
-        "symbol": "ETH",
         "action": "sell",
         "confidence": 1.0,
         "urgency": 7,
         "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
-          "Sell rsi_14: Overbought RSI: 84.4",
+          "Sell rsi_14: Overbought RSI: 82.1",
           "Strong macd: MACD bullish crossover",
-          "Sell bollinger_bands: Price at upper Bollinger Band (1.13)"
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.07)"
+        ],
+        "risk_level": "conservative"
+      },
+      {
+        "symbol": "ETH",
+        "action": "reduce",
+        "confidence": 1.0,
+        "urgency": 5,
+        "target_allocation": 0.04,
+        "expected_roi": 0.05,
+        "reasoning": [
+          "Sell rsi_14: Extreme overbought RSI: 85.1",
+          "Strong macd: MACD bullish crossover",
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.01)"
         ],
         "risk_level": "conservative"
       },
@@ -58,11 +58,11 @@
         "confidence": 1.0,
         "urgency": 6,
         "target_allocation": 0.12,
-        "expected_roi": 0.09615269507086302,
+        "expected_roi": 0.096380168738372,
         "reasoning": [
+          "Sell rsi_14: Overbought RSI: 78.6",
           "Strong macd: MACD bullish crossover",
-          "Sell bollinger_bands: Price at upper Bollinger Band (1.09)",
-          "Strong supertrend: SuperTrend bullish"
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.00)"
         ],
         "risk_level": "conservative"
       },
@@ -82,48 +82,48 @@
       },
       {
         "symbol": "PEPE",
-        "action": "hold",
+        "action": "accumulate",
         "confidence": 1.0,
         "urgency": 5,
-        "target_allocation": 0.15,
+        "target_allocation": 0.08,
         "expected_roi": 0.0,
         "reasoning": [
-          "Sell bollinger_bands: Price at upper Bollinger Band (1.03)",
           "Strong supertrend: SuperTrend bullish",
-          "Sell rsi_14: Extreme overbought RSI: 86.7"
+          "Sell rsi_14: Overbought RSI: 81.0",
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
       }
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 27,
+      "immediate_actions_needed": 24,
       "profit_opportunities": 5,
-      "risk_alerts": 1,
+      "risk_alerts": 2,
       "portfolio_balance": "balanced",
       "key_recommendations": [
+        {
+          "symbol": "SYRUP",
+          "action": "strong_buy",
+          "reasoning": "Strong supertrend: SuperTrend bullish"
+        },
+        {
+          "symbol": "HBAR",
+          "action": "strong_buy",
+          "reasoning": "Strong supertrend: SuperTrend bullish"
+        },
         {
           "symbol": "MAGIC",
           "action": "stop_loss",
           "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
-        {
-          "symbol": "STO",
-          "action": "strong_buy",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
-        {
-          "symbol": "SPK",
-          "action": "strong_buy",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
       "performance_outlook": "neutral"
     }
   },
   "metadata": {
-    "generated_at": "2026-08-20T16:36:32.628027",
-    "analysis_duration": 16.74779772758484,
+    "generated_at": "2026-08-21T01:18:15.649043",
+    "analysis_duration": 16.82108211517334,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
