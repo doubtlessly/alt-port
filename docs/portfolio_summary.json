@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T08:30:55.109226",
+  "generated_at": "2026-08-22T12:39:26.653062",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
@@ -18,21 +18,21 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.4738948475006781,
+      "risk_score": 0.492617520715882,
       "diversification_score": 0.5,
-      "momentum_score": 0.5790490652361554,
-      "overall_score": 0.5350514059118258
+      "momentum_score": 0.5833528201746715,
+      "overall_score": 0.5302450998195964
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "hold",
+        "action": "reduce",
         "confidence": 1.0,
         "urgency": 5,
-        "target_allocation": 3.229961474014023e-10,
-        "expected_roi": 0.0,
+        "target_allocation": 0.04,
+        "expected_roi": 0.05,
         "reasoning": [
-          "Sell rsi_14: Overbought RSI: 80.3",
+          "Sell rsi_14: Overbought RSI: 80.8",
           "Strong macd: MACD bullish crossover",
           "Sell bollinger_bands: Price at upper Bollinger Band (0.98)"
         ],
@@ -40,27 +40,27 @@
       },
       {
         "symbol": "ETH",
-        "action": "strong_buy",
+        "action": "accumulate",
         "confidence": 1.0,
-        "urgency": 9,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09486348434301073,
+        "urgency": 6,
+        "target_allocation": 0.08,
+        "expected_roi": 0.0,
         "reasoning": [
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Strong macd: MACD bullish crossover"
+          "Sell macd: MACD bearish crossover"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "SOL",
-        "action": "strong_buy",
+        "action": "accumulate",
         "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09341050823386798,
+        "urgency": 5,
+        "target_allocation": 0.08,
+        "expected_roi": 0.0,
         "reasoning": [
-          "Sell rsi_14: Overbought RSI: 82.1",
+          "Sell rsi_14: Overbought RSI: 83.1",
           "Strong macd: MACD bullish crossover",
           "Sell bollinger_bands: Price at upper Bollinger Band (0.98)"
         ],
@@ -68,13 +68,13 @@
       },
       {
         "symbol": "BONK",
-        "action": "accumulate",
+        "action": "buy",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0.05,
-        "expected_roi": 0.0,
+        "urgency": 8,
+        "target_allocation": 0.07500000000000001,
+        "expected_roi": 0.0887089986558849,
         "reasoning": [
-          "Sell bollinger_bands: Price at upper Bollinger Band (0.97)",
+          "Sell bollinger_bands: Price at upper Bollinger Band (0.96)",
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish"
         ],
@@ -88,8 +88,8 @@
         "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
-          "Sell rsi_14: Overbought RSI: 81.0",
-          "Sell bollinger_bands: Price at upper Bollinger Band (1.03)",
+          "Sell rsi_14: Overbought RSI: 80.1",
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.02)",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "moderate"
@@ -97,18 +97,18 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 24,
+      "immediate_actions_needed": 25,
       "profit_opportunities": 5,
       "risk_alerts": 1,
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "HBAR",
+          "symbol": "SYRUP",
           "action": "stop_loss",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
+          "reasoning": "Sell bollinger_bands: Price at upper Bollinger Band (0.95)"
         },
         {
-          "symbol": "STO",
+          "symbol": "HBAR",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         },
@@ -122,8 +122,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-08-22T08:30:55.107675",
-    "analysis_duration": 17.870115756988525,
+    "generated_at": "2026-08-22T12:39:26.651348",
+    "analysis_duration": 16.810631275177002,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
