@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-22T20:23:12.036434",
+  "generated_at": "2026-08-23T01:19:40.239507",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
-      "bullish": 2,
-      "bearish": 2,
-      "neutral": 35
+      "bullish": 4,
+      "bearish": 1,
+      "neutral": 34
     },
     "risk_distribution": {
       "medium": 5,
@@ -13,68 +13,68 @@
       "high": 10,
       "unknown": 1
     },
-    "data_quality_average": 0.9614358974358973
+    "data_quality_average": 0.9614871794871797
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.46054169246022486,
+      "risk_score": 0.44472906104316384,
       "diversification_score": 0.5,
-      "momentum_score": 0.588166105135587,
-      "overall_score": 0.5425414708917874
+      "momentum_score": 0.5713452673839647,
+      "overall_score": 0.5422054021136004
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "sell",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0,
+        "urgency": 5,
+        "target_allocation": 0.04,
         "expected_roi": 0.05,
         "reasoning": [
-          "Sell rsi_14: Overbought RSI: 81.2",
-          "Strong macd: MACD bullish crossover",
-          "Sell bollinger_bands: Price at upper Bollinger Band (0.98)"
-        ],
-        "risk_level": "conservative"
-      },
-      {
-        "symbol": "ETH",
-        "action": "accumulate",
-        "confidence": 1.0,
-        "urgency": 6,
-        "target_allocation": 0.08,
-        "expected_roi": 0.0,
-        "reasoning": [
-          "Sell rsi_14: Overbought RSI: 79.4",
+          "Sell rsi_14: Overbought RSI: 80.4",
           "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
       },
       {
-        "symbol": "SOL",
-        "action": "accumulate",
+        "symbol": "ETH",
+        "action": "buy",
         "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.08,
-        "expected_roi": 0.0,
+        "urgency": 7,
+        "target_allocation": 0.12,
+        "expected_roi": 0.09554475836685382,
         "reasoning": [
-          "Sell rsi_14: Overbought RSI: 83.5",
           "Strong macd: MACD bullish crossover",
-          "Sell bollinger_bands: Price at upper Bollinger Band (1.00)"
+          "Strong supertrend: SuperTrend bullish",
+          "Sell macd: MACD bearish crossover"
+        ],
+        "risk_level": "conservative"
+      },
+      {
+        "symbol": "SOL",
+        "action": "strong_buy",
+        "confidence": 1.0,
+        "urgency": 8,
+        "target_allocation": 0.15,
+        "expected_roi": 0.09417064585618401,
+        "reasoning": [
+          "Sell rsi_14: Overbought RSI: 84.5",
+          "Strong macd: MACD bullish crossover",
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "BONK",
-        "action": "accumulate",
+        "action": "buy",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0.05,
-        "expected_roi": 0.0,
+        "urgency": 8,
+        "target_allocation": 0.07500000000000001,
+        "expected_roi": 0.08969082290452202,
         "reasoning": [
-          "Sell bollinger_bands: Price at upper Bollinger Band (1.02)",
+          "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish"
         ],
@@ -88,8 +88,8 @@
         "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
-          "Sell rsi_14: Overbought RSI: 84.1",
-          "Sell bollinger_bands: Price at upper Bollinger Band (1.05)",
+          "Sell rsi_14: Overbought RSI: 82.4",
+          "Sell bollinger_bands: Price at upper Bollinger Band (0.95)",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "moderate"
@@ -97,7 +97,7 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 22,
+      "immediate_actions_needed": 27,
       "profit_opportunities": 5,
       "risk_alerts": 1,
       "portfolio_balance": "balanced",
@@ -108,13 +108,13 @@
           "reasoning": "Strong supertrend: SuperTrend bullish"
         },
         {
-          "symbol": "STO",
+          "symbol": "BRETT",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         },
         {
-          "symbol": "HOME",
-          "action": "sell",
+          "symbol": "STO",
+          "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
@@ -122,8 +122,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-08-22T20:23:12.034668",
-    "analysis_duration": 17.68988561630249,
+    "generated_at": "2026-08-23T01:19:40.238405",
+    "analysis_duration": 16.244735956192017,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
