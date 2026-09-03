@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-03T08:36:58.423923",
+  "generated_at": "2026-09-03T15:54:51.244943",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
-      "bullish": 0,
+      "bullish": 2,
       "bearish": 2,
-      "neutral": 37
+      "neutral": 35
     },
     "risk_distribution": {
       "medium": 5,
@@ -18,10 +18,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.3859109685338435,
+      "risk_score": 0.3871585778608781,
       "diversification_score": 0.5,
-      "momentum_score": 0.5884770938494331,
-      "overall_score": 0.5675220417718632
+      "momentum_score": 0.6585078862702978,
+      "overall_score": 0.5904497694698065
     },
     "top_recommendations": [
       {
@@ -30,9 +30,9 @@
         "confidence": 1.0,
         "urgency": 8,
         "target_allocation": 0.15,
-        "expected_roi": 0.09707833174720125,
+        "expected_roi": 0.09673059488661703,
         "reasoning": [
-          "Sell macd: MACD bearish crossover",
+          "Strong macd: MACD bullish crossover",
           "Strong supertrend: SuperTrend bullish",
           "Strong macd: MACD bullish crossover"
         ],
@@ -40,15 +40,15 @@
       },
       {
         "symbol": "ETH",
-        "action": "reduce",
+        "action": "strong_buy",
         "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.04,
-        "expected_roi": 0.05,
+        "urgency": 8,
+        "target_allocation": 0.15,
+        "expected_roi": 0.09576641758020701,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
-          "Sell macd: MACD bearish crossover"
+          "Strong macd: MACD bullish crossover"
         ],
         "risk_level": "conservative"
       },
@@ -58,25 +58,25 @@
         "confidence": 1.0,
         "urgency": 8,
         "target_allocation": 0.15,
-        "expected_roi": 0.09496785414900742,
+        "expected_roi": 0.0946784168803321,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
-          "Strong supertrend: SuperTrend bullish"
+          "Strong macd: MACD bullish crossover"
         ],
         "risk_level": "conservative"
       },
       {
         "symbol": "BONK",
-        "action": "sell",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 9,
-        "target_allocation": 0,
+        "urgency": 7,
+        "target_allocation": 0.025,
         "expected_roi": 0.05,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
           "Strong supertrend: SuperTrend bullish",
-          "Sell supertrend: SuperTrend bearish"
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.02)"
         ],
         "risk_level": "moderate"
       },
@@ -89,15 +89,15 @@
         "expected_roi": 0.05,
         "reasoning": [
           "Strong supertrend: SuperTrend bullish",
-          "Sell supertrend: SuperTrend bearish",
-          "Sell supertrend: SuperTrend bearish"
+          "Sell bollinger_bands: Price at upper Bollinger Band (1.19)",
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
       }
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 28,
+      "immediate_actions_needed": 23,
       "profit_opportunities": 5,
       "risk_alerts": 2,
       "portfolio_balance": "balanced",
@@ -113,7 +113,7 @@
           "reasoning": "Strong supertrend: SuperTrend bullish"
         },
         {
-          "symbol": "COOKIE",
+          "symbol": "HOME",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         }
@@ -122,8 +122,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-09-03T08:36:58.422410",
-    "analysis_duration": 18.46174383163452,
+    "generated_at": "2026-09-03T15:54:51.243171",
+    "analysis_duration": 16.371057271957397,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
