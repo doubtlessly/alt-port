@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-08T21:05:11.206183",
+  "generated_at": "2026-10-09T04:52:33.727243",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
-      "bullish": 2,
+      "bullish": 1,
       "bearish": 2,
-      "neutral": 35
+      "neutral": 36
     },
     "risk_distribution": {
       "medium": 4,
@@ -13,24 +13,24 @@
       "high": 13,
       "unknown": 1
     },
-    "data_quality_average": 0.9638461538461539
+    "data_quality_average": 0.9638974358974358
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.47964772295645797,
+      "risk_score": 0.4319801250425824,
       "diversification_score": 0.5,
-      "momentum_score": 0.6344374213533363,
-      "overall_score": 0.5515965661322927
+      "momentum_score": 0.6489553531716863,
+      "overall_score": 0.5723250760430346
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "sell",
+        "action": "accumulate",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0,
-        "expected_roi": 0.05,
+        "urgency": 5,
+        "target_allocation": 0.08,
+        "expected_roi": 0.0,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -40,14 +40,14 @@
       },
       {
         "symbol": "ETH",
-        "action": "sell",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0,
+        "urgency": 5,
+        "target_allocation": 0.04,
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
-          "Strong bollinger_bands: Price at lower Bollinger Band (-0.15)",
+          "Strong bollinger_bands: Price at lower Bollinger Band (0.02)",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
@@ -61,8 +61,8 @@
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.05)",
-          "Strong supertrend: SuperTrend bullish"
+          "Strong supertrend: SuperTrend bullish",
+          "Sell macd: MACD bearish crossover"
         ],
         "risk_level": "conservative"
       },
@@ -92,7 +92,7 @@
           "Sell supertrend: SuperTrend bearish",
           "Sell supertrend: SuperTrend bearish"
         ],
-        "risk_level": "moderate"
+        "risk_level": "conservative"
       }
     ],
     "executive_summary": {
@@ -113,7 +113,7 @@
           "reasoning": "Strong supertrend: SuperTrend bullish"
         },
         {
-          "symbol": "BRETT",
+          "symbol": "POPCAT",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         }
@@ -122,8 +122,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-10-08T21:05:11.204542",
-    "analysis_duration": 17.14021348953247,
+    "generated_at": "2026-10-09T04:52:33.725907",
+    "analysis_duration": 16.543492317199707,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
