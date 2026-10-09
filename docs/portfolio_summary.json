@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-09T15:02:09.982529",
+  "generated_at": "2026-10-09T20:36:22.594414",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
-      "bullish": 1,
+      "bullish": 2,
       "bearish": 2,
-      "neutral": 36
+      "neutral": 35
     },
     "risk_distribution": {
       "medium": 4,
@@ -18,19 +18,19 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.424622454253817,
+      "risk_score": 0.4407210690736026,
       "diversification_score": 0.5,
-      "momentum_score": 0.6560654077581332,
-      "overall_score": 0.5771476511681054
+      "momentum_score": 0.6643051649082928,
+      "overall_score": 0.5745280319448968
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "strong_buy",
+        "action": "accumulate",
         "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0.15,
-        "expected_roi": 0.09721191400879896,
+        "urgency": 5,
+        "target_allocation": 0.08,
+        "expected_roi": 0.0,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -40,14 +40,14 @@
       },
       {
         "symbol": "ETH",
-        "action": "reduce",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.04,
+        "urgency": 7,
+        "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.03)",
+          "Strong bollinger_bands: Price at lower Bollinger Band (0.00)",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
@@ -61,8 +61,8 @@
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
-          "Strong supertrend: SuperTrend bullish",
-          "Sell macd: MACD bearish crossover"
+          "Strong bollinger_bands: Price at lower Bollinger Band (0.04)",
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
       },
@@ -103,6 +103,11 @@
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
+          "symbol": "MAV",
+          "action": "stop_loss",
+          "reasoning": "Sell supertrend: SuperTrend bearish"
+        },
+        {
           "symbol": "STO",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
@@ -111,19 +116,14 @@
           "symbol": "POPCAT",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
-        {
-          "symbol": "DOGE",
-          "action": "stop_loss",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
       "performance_outlook": "neutral"
     }
   },
   "metadata": {
-    "generated_at": "2026-10-09T15:02:09.981243",
-    "analysis_duration": 16.862223148345947,
+    "generated_at": "2026-10-09T20:36:22.592796",
+    "analysis_duration": 15.894003629684448,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
