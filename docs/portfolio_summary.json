@@ -1,39 +1,39 @@
 {
-  "generated_at": "2026-10-30T14:53:09.912428",
+  "generated_at": "2026-10-30T20:28:35.784918",
   "summary": {
-    "total_analyzed": 43,
+    "total_analyzed": 39,
     "market_sentiment": {
       "bullish": 2,
-      "bearish": 2,
-      "neutral": 39
+      "bearish": 1,
+      "neutral": 36
     },
     "risk_distribution": {
       "medium": 5,
-      "very_high": 25,
+      "very_high": 21,
       "high": 12,
       "unknown": 1
     },
-    "data_quality_average": 0.9682325581395349
+    "data_quality_average": 0.964974358974359
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.5965923570368138,
+      "risk_score": 0.5137030847787936,
       "diversification_score": 0.5,
-      "momentum_score": 0.3141010721800305,
-      "overall_score": 0.40583623838107225
+      "momentum_score": 0.34755351296245696,
+      "overall_score": 0.44461680939455445
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "sell",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0,
+        "urgency": 5,
+        "target_allocation": 0.04,
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
-          "Strong bollinger_bands: Price at lower Bollinger Band (-0.00)",
+          "Strong bollinger_bands: Price at lower Bollinger Band (-0.02)",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
@@ -61,7 +61,7 @@
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.03)",
+          "Strong bollinger_bands: Price at lower Bollinger Band (0.04)",
           "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
@@ -82,38 +82,38 @@
       },
       {
         "symbol": "PEPE",
-        "action": "sell",
+        "action": "hold",
         "confidence": 1.0,
-        "urgency": 8,
-        "target_allocation": 0,
-        "expected_roi": 0.05,
+        "urgency": 6,
+        "target_allocation": 0.15,
+        "expected_roi": 0.0,
         "reasoning": [
-          "Sell bollinger_bands: Price at upper Bollinger Band (0.97)",
           "Strong supertrend: SuperTrend bullish",
-          "Sell supertrend: SuperTrend bearish"
+          "Sell supertrend: SuperTrend bearish",
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "moderate"
       }
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 29,
+      "immediate_actions_needed": 27,
       "profit_opportunities": 5,
-      "risk_alerts": 1,
+      "risk_alerts": 2,
       "portfolio_balance": "balanced",
       "key_recommendations": [
-        {
-          "symbol": "SYRUP",
-          "action": "stop_loss",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
-        },
         {
           "symbol": "REZ",
           "action": "strong_buy",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         },
         {
-          "symbol": "ZK",
+          "symbol": "RIO",
+          "action": "stop_loss",
+          "reasoning": "Strong supertrend: SuperTrend bullish"
+        },
+        {
+          "symbol": "HOME",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         }
@@ -122,11 +122,11 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-10-30T14:53:09.905378",
-    "analysis_duration": 12.838378429412842,
+    "generated_at": "2026-10-30T20:28:35.783710",
+    "analysis_duration": 17.669536113739014,
     "total_holdings": 48,
-    "successful_analyses": 43,
-    "data_completeness": 0.8958333333333334,
+    "successful_analyses": 39,
+    "data_completeness": 0.8125,
     "timeframes": [
       "1d",
       "4h",
