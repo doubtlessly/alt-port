@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-14T00:42:49.727744",
+  "generated_at": "2026-11-14T11:15:42.903195",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
-      "bullish": 4,
+      "bullish": 5,
       "bearish": 2,
-      "neutral": 33
+      "neutral": 32
     },
     "risk_distribution": {
       "medium": 5,
@@ -18,10 +18,10 @@
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.41932607174590725,
+      "risk_score": 0.4500781409157855,
       "diversification_score": 0.5,
-      "momentum_score": 0.29498008151378075,
-      "overall_score": 0.4585513365892912
+      "momentum_score": 0.2711648009342303,
+      "overall_score": 0.4403622200061483
     },
     "top_recommendations": [
       {
@@ -33,8 +33,8 @@
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
-          "Strong supertrend: SuperTrend bullish",
-          "Sell macd: MACD bearish crossover"
+          "Strong bollinger_bands: Price at lower Bollinger Band (0.04)",
+          "Strong supertrend: SuperTrend bullish"
         ],
         "risk_level": "conservative"
       },
@@ -54,13 +54,13 @@
       },
       {
         "symbol": "SOL",
-        "action": "sell",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0,
+        "urgency": 5,
+        "target_allocation": 0.04,
         "expected_roi": 0.05,
         "reasoning": [
-          "Strong rsi_14: Oversold RSI: 19.2",
+          "Strong rsi_14: Oversold RSI: 17.7",
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish"
         ],
@@ -78,7 +78,7 @@
           "Sell supertrend: SuperTrend bearish",
           "Sell supertrend: SuperTrend bearish"
         ],
-        "risk_level": "conservative"
+        "risk_level": "moderate"
       },
       {
         "symbol": "PEPE",
@@ -97,20 +97,20 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 32,
+      "immediate_actions_needed": 30,
       "profit_opportunities": 5,
       "risk_alerts": 2,
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "REZ",
+          "symbol": "STO",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         },
         {
-          "symbol": "STO",
-          "action": "stop_loss",
-          "reasoning": "Strong supertrend: SuperTrend bullish"
+          "symbol": "HOME",
+          "action": "strong_buy",
+          "reasoning": "Strong bollinger_bands: Price at lower Bollinger Band (-0.08)"
         },
         {
           "symbol": "RIO",
@@ -122,8 +122,8 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-11-14T00:42:49.726246",
-    "analysis_duration": 17.445033311843872,
+    "generated_at": "2026-11-14T11:15:42.901746",
+    "analysis_duration": 17.50962519645691,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
