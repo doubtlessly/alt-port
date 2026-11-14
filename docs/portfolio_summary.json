@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-13T19:17:48.652322",
+  "generated_at": "2026-11-14T00:42:49.727744",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
-      "bullish": 3,
+      "bullish": 4,
       "bearish": 2,
-      "neutral": 34
+      "neutral": 33
     },
     "risk_distribution": {
       "medium": 5,
@@ -13,28 +13,28 @@
       "high": 12,
       "unknown": 1
     },
-    "data_quality_average": 0.9656923076923076
+    "data_quality_average": 0.9657435897435898
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.4151726649112524,
+      "risk_score": 0.41932607174590725,
       "diversification_score": 0.5,
-      "momentum_score": 0.3032648037928067,
-      "overall_score": 0.46269737962718477
+      "momentum_score": 0.29498008151378075,
+      "overall_score": 0.4585513365892912
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "reduce",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.04,
+        "urgency": 7,
+        "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.02)",
-          "Strong supertrend: SuperTrend bullish"
+          "Strong supertrend: SuperTrend bullish",
+          "Sell macd: MACD bearish crossover"
         ],
         "risk_level": "conservative"
       },
@@ -54,13 +54,13 @@
       },
       {
         "symbol": "SOL",
-        "action": "reduce",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.04,
+        "urgency": 7,
+        "target_allocation": 0,
         "expected_roi": 0.05,
         "reasoning": [
-          "Strong rsi_14: Oversold RSI: 20.9",
+          "Strong rsi_14: Oversold RSI: 19.2",
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish"
         ],
@@ -97,18 +97,18 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 31,
+      "immediate_actions_needed": 32,
       "profit_opportunities": 5,
       "risk_alerts": 2,
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "MAV",
+          "symbol": "REZ",
           "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
+          "reasoning": "Strong supertrend: SuperTrend bullish"
         },
         {
-          "symbol": "REZ",
+          "symbol": "STO",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         },
@@ -118,12 +118,12 @@
           "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
-      "performance_outlook": "neutral"
+      "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-11-13T19:17:48.651223",
-    "analysis_duration": 16.23731827735901,
+    "generated_at": "2026-11-14T00:42:49.726246",
+    "analysis_duration": 17.445033311843872,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
