@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-15T20:52:21.750042",
+  "generated_at": "2026-11-16T05:03:42.755272",
   "summary": {
     "total_analyzed": 39,
     "market_sentiment": {
-      "bullish": 3,
+      "bullish": 2,
       "bearish": 2,
-      "neutral": 34
+      "neutral": 35
     },
     "risk_distribution": {
       "medium": 5,
@@ -13,24 +13,24 @@
       "high": 12,
       "unknown": 1
     },
-    "data_quality_average": 0.9657948717948717
+    "data_quality_average": 0.9658461538461538
   },
   "ai_insights": {
     "portfolio_health": {
       "total_value": 3003977904.3995724,
-      "risk_score": 0.5436982730315398,
+      "risk_score": 0.4460766385187257,
       "diversification_score": 0.5,
-      "momentum_score": 0.23047536953590847,
-      "overall_score": 0.3955923655014562
+      "momentum_score": 0.2543189451483643,
+      "overall_score": 0.43608076887654623
     },
     "top_recommendations": [
       {
         "symbol": "BTC",
-        "action": "reduce",
+        "action": "buy",
         "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.04,
-        "expected_roi": 0.05,
+        "urgency": 6,
+        "target_allocation": 0.12,
+        "expected_roi": 0.09543694859266426,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -40,11 +40,11 @@
       },
       {
         "symbol": "ETH",
-        "action": "sell",
+        "action": "buy",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0,
-        "expected_roi": 0.05,
+        "urgency": 6,
+        "target_allocation": 0.12,
+        "expected_roi": 0.09370745967633715,
         "reasoning": [
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish",
@@ -54,13 +54,13 @@
       },
       {
         "symbol": "SOL",
-        "action": "sell",
+        "action": "reduce",
         "confidence": 1.0,
-        "urgency": 7,
-        "target_allocation": 0,
+        "urgency": 5,
+        "target_allocation": 0.04,
         "expected_roi": 0.05,
         "reasoning": [
-          "Strong rsi_14: Oversold RSI: 19.3",
+          "Strong rsi_14: Oversold RSI: 20.3",
           "Sell macd: MACD bearish crossover",
           "Strong supertrend: SuperTrend bullish"
         ],
@@ -82,14 +82,14 @@
       },
       {
         "symbol": "PEPE",
-        "action": "hold",
+        "action": "sell",
         "confidence": 1.0,
-        "urgency": 5,
-        "target_allocation": 0.15,
-        "expected_roi": 0.0,
+        "urgency": 8,
+        "target_allocation": 0,
+        "expected_roi": 0.05,
         "reasoning": [
-          "Strong bollinger_bands: Price at lower Bollinger Band (0.04)",
           "Strong supertrend: SuperTrend bullish",
+          "Sell supertrend: SuperTrend bearish",
           "Sell supertrend: SuperTrend bearish"
         ],
         "risk_level": "moderate"
@@ -97,18 +97,13 @@
     ],
     "executive_summary": {
       "overall_health": "good",
-      "immediate_actions_needed": 29,
+      "immediate_actions_needed": 32,
       "profit_opportunities": 5,
       "risk_alerts": 2,
       "portfolio_balance": "balanced",
       "key_recommendations": [
         {
-          "symbol": "MAV",
-          "action": "stop_loss",
-          "reasoning": "Sell supertrend: SuperTrend bearish"
-        },
-        {
-          "symbol": "REZ",
+          "symbol": "SYRUP",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
         },
@@ -116,14 +111,19 @@
           "symbol": "STO",
           "action": "stop_loss",
           "reasoning": "Strong supertrend: SuperTrend bullish"
+        },
+        {
+          "symbol": "RIO",
+          "action": "strong_buy",
+          "reasoning": "Strong supertrend: SuperTrend bullish"
         }
       ],
       "performance_outlook": "negative"
     }
   },
   "metadata": {
-    "generated_at": "2026-11-15T20:52:21.748723",
-    "analysis_duration": 16.661360025405884,
+    "generated_at": "2026-11-16T05:03:42.754328",
+    "analysis_duration": 16.26234459877014,
     "total_holdings": 48,
     "successful_analyses": 39,
     "data_completeness": 0.8125,
